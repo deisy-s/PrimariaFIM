@@ -25,7 +25,8 @@ namespace ProyectoEscuela
         public DirectorMaestros()
         {
             InitializeComponent();
-            
+            this.AutoScaleMode = AutoScaleMode.None;
+            this.Font = new Font("Century Gothic", 12, FontStyle.Bold);
         }
 
         private void DirectorMaestros_Load(object sender, EventArgs e)
@@ -46,7 +47,8 @@ namespace ProyectoEscuela
                 {
                     case 0:
                         pnlMaestro1.Visible = true;
-                        lblId1.Text = row[0].ToString();
+                        lblId1.Text = (i + 1).ToString();
+                        lblId1.Name = row[0].ToString();
                         lblName1.Text = row[1].ToString() + " " + row[2].ToString();
                         string group = CheckGroup(row[3].ToString());
                         lblGroup1.Text = group;
@@ -55,7 +57,8 @@ namespace ProyectoEscuela
                         break;
                     case 1:
                         pnlMaestro2.Visible = true;
-                        lblId2.Text = row[0].ToString();
+                        lblId2.Text = (i + 1).ToString();
+                        lblId2.Name = row[0].ToString();
                         lblName2.Text = row[1].ToString() + " " + row[2].ToString();
                         string group1 = CheckGroup(row[3].ToString());
                         lblGroup2.Text = group1;
@@ -64,7 +67,8 @@ namespace ProyectoEscuela
                         break;
                     case 2:
                         pnlMaestro3.Visible = true;
-                        lblId3.Text = row[0].ToString();
+                        lblId3.Name = row[0].ToString();
+                        lblId3.Text = (i + 1).ToString();
                         lblName3.Text = row[1].ToString() + " " + row[2].ToString();
                         string group2 = CheckGroup(row[3].ToString());
                         lblGroup3.Text = group2;
@@ -73,7 +77,8 @@ namespace ProyectoEscuela
                         break;
                     case 3:
                         pnlMaestro4.Visible = true;
-                        lblId4.Text = row[0].ToString();
+                        lblId4.Text = (i + 1).ToString();
+                        lblId4.Name = row[0].ToString();
                         lblName4.Text = row[1].ToString() + " " + row[2].ToString();
                         string group3 = CheckGroup(row[3].ToString());
                         lblGroup4.Text = group3;
@@ -82,7 +87,8 @@ namespace ProyectoEscuela
                         break;
                     case 4:
                         pnlMaestro5.Visible = true;
-                        lblId5.Text = row[0].ToString();
+                        lblId5.Text = (i + 1).ToString();
+                        lblId5.Name = row[0].ToString();
                         lblName5.Text = row[1].ToString() + " " + row[2].ToString();
                         string group4 = CheckGroup(row[3].ToString());
                         lblGroup5.Text = group4;
@@ -91,7 +97,8 @@ namespace ProyectoEscuela
                         break;
                     case 5:
                         pnlMaestro6.Visible = true;
-                        lblId6.Text = row[0].ToString();
+                        lblId6.Name = row[0].ToString();
+                        lblId6.Text = (i + 1).ToString();
                         lblName6.Text = row[1].ToString() + " " + row[2].ToString();
                         string group5 = CheckGroup(row[3].ToString());
                         lblGroup6.Text = group5;
@@ -132,7 +139,7 @@ namespace ProyectoEscuela
 
         private void btnModify1_Click(object sender, EventArgs e)
         {
-            int id = Convert.ToInt16(lblId1.Text);
+            int id = Convert.ToInt16(lblId1.Name);
             CallModify(id);
         }
 
@@ -157,31 +164,31 @@ namespace ProyectoEscuela
 
         private void btnModify2_Click(object sender, EventArgs e)
         {
-            int id = Convert.ToInt16(lblId2.Text);
+            int id = Convert.ToInt16(lblId2.Name);
             CallModify(id);
         }
 
         private void btnModify3_Click(object sender, EventArgs e)
         {
-            int id = Convert.ToInt16(lblId3.Text);
+            int id = Convert.ToInt16(lblId3.Name);
             CallModify(id);
         }
 
         private void btnModify4_Click(object sender, EventArgs e)
         {
-            int id = Convert.ToInt16(lblId4.Text);
+            int id = Convert.ToInt16(lblId4.Name);
             CallModify(id);
         }
 
         private void btnModify5_Click(object sender, EventArgs e)
         {
-            int id = Convert.ToInt16(lblId5.Text);
+            int id = Convert.ToInt16(lblId5.Name);
             CallModify(id);
         }
 
         private void btnModify6_Click(object sender, EventArgs e)
         {
-            int id = Convert.ToInt16(lblId6.Text);
+            int id = Convert.ToInt16(lblId6.Name);
             CallModify(id);
         }
 
@@ -199,69 +206,70 @@ namespace ProyectoEscuela
             if (direClass.DeleteTeacher(id))
             {
                 MessageBox.Show("Se eliminó " + name + " " + lname + " de manera exitosa");
+                LoadOptions();
             }
             else
             {
-                MessageBox.Show("Ocurrió un error: " + direClass.sError);
+                MessageBox.Show("Ocurrió un error: " + direClass.sError, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
         private void btnDelete1_Click(object sender, EventArgs e)
         {
-            DialogResult result = MessageBox.Show($"¿Esta seguro que desea eliminar a {lblName1.Text}?", "Advertencia", MessageBoxButtons.YesNo);
+            DialogResult result = MessageBox.Show($"¿Está seguro que desea eliminar a {lblName1.Text}?", "Advertencia", MessageBoxButtons.YesNo);
             if (result == DialogResult.Yes)
             {
-                int id = Convert.ToInt16(lblId1.Text);
+                int id = Convert.ToInt16(lblId1.Name);
                 CallDelete(id);
             }
         }
 
         private void btnDelete2_Click(object sender, EventArgs e)
         {
-            DialogResult result = MessageBox.Show($"¿Esta seguro que desea eliminar a {lblName2.Text}?", "Advertencia", MessageBoxButtons.YesNo);
+            DialogResult result = MessageBox.Show($"¿Está seguro que desea eliminar a {lblName2.Text}?", "Advertencia", MessageBoxButtons.YesNo);
             if (result == DialogResult.Yes)
             {
-                int id = Convert.ToInt16(lblId2.Text);
+                int id = Convert.ToInt16(lblId2.Name);
                 CallDelete(id);
             }
         }
 
         private void btnDelete3_Click(object sender, EventArgs e)
         {
-            DialogResult result = MessageBox.Show($"¿Esta seguro que desea eliminar a {lblName3.Text}?", "Advertencia", MessageBoxButtons.YesNo);
+            DialogResult result = MessageBox.Show($"¿Está seguro que desea eliminar a {lblName3.Text}?", "Advertencia", MessageBoxButtons.YesNo);
             if (result == DialogResult.Yes)
             {
-                int id = Convert.ToInt16(lblId3.Text);
+                int id = Convert.ToInt16(lblId3.Name);
                 CallDelete(id);
             }
         }
 
         private void btnDelete4_Click(object sender, EventArgs e)
         {
-            DialogResult result = MessageBox.Show($"¿Esta seguro que desea eliminar a {lblName4.Text}?", "Advertencia", MessageBoxButtons.YesNo);
+            DialogResult result = MessageBox.Show($"¿Está seguro que desea eliminar a {lblName4.Text}?", "Advertencia", MessageBoxButtons.YesNo);
             if (result == DialogResult.Yes)
             {
-                int id = Convert.ToInt16(lblId4.Text);
+                int id = Convert.ToInt16(lblId4.Name);
                 CallDelete(id);
             }
         }
 
         private void btnDelete5_Click(object sender, EventArgs e)
         {
-            DialogResult result = MessageBox.Show($"¿Esta seguro que desea eliminar a {lblName5.Text}?", "Advertencia", MessageBoxButtons.YesNo);
+            DialogResult result = MessageBox.Show($"¿Está seguro que desea eliminar a {lblName5.Text}?", "Advertencia", MessageBoxButtons.YesNo);
             if (result == DialogResult.Yes)
             {
-                int id = Convert.ToInt16(lblId5.Text);
+                int id = Convert.ToInt16(lblId5.Name);
                 CallDelete(id);
             }
         }
 
         private void btnDelete6_Click(object sender, EventArgs e)
         {
-            DialogResult result = MessageBox.Show($"¿Esta seguro que desea eliminar a {lblName6.Text}?", "Advertencia", MessageBoxButtons.YesNo);
+            DialogResult result = MessageBox.Show($"¿Está seguro que desea eliminar a {lblName6.Text}?", "Advertencia", MessageBoxButtons.YesNo);
             if (result == DialogResult.Yes)
             {
-                int id = Convert.ToInt16(lblId6.Text);
+                int id = Convert.ToInt16(lblId6.Name);
                 CallDelete(id);
             }
         }
@@ -295,11 +303,11 @@ namespace ProyectoEscuela
         {
             if (tbSearch.Text != string.Empty)
             {
-                int id = direClass.GetIDName(tbSearch.Text);
-                if (id == 0)
+                List<int> lId = direClass.GetIDName(tbSearch.Text);
+                if (lId.Count == 0)
                 {
-                    id = direClass.GetIDLastName(tbSearch.Text);
-                    if (id == 0)
+                    lId = direClass.GetIDLastName(tbSearch.Text);
+                    if (lId.Count == 0)
                     {
                         MessageBox.Show("No se ha podido encontrar una coincidencia", "Error", MessageBoxButtons.OK);
                         return;
@@ -307,20 +315,83 @@ namespace ProyectoEscuela
                 }
 
                 DataTable dt = new DataTable();
-                direClass.GetTeacher(ref dt, id);
-                pnlMaestro6.Visible = false;
-                pnlMaestro5.Visible = false;
-                pnlMaestro4.Visible = false;
-                pnlMaestro3.Visible = false;
-                pnlMaestro2.Visible = false;
-                pnlAddMaestro.Visible = false;
-
-                foreach (DataRow row in dt.Rows)
+                foreach (var id in lId)
                 {
-                    lblId1.Text = row[0].ToString();
-                    lblName1.Text = row[1].ToString() + " " + row[2].ToString();
-                    string group = CheckGroup(row[3].ToString());
-                    lblGroup1.Text = group;
+                    direClass.GetTeacher(ref dt, id);
+                    pnlMaestro6.Visible = false;
+                    pnlMaestro5.Visible = false;
+                    pnlMaestro4.Visible = false;
+                    pnlMaestro3.Visible = false;
+                    pnlMaestro2.Visible = false;
+                    pnlAddMaestro.Visible = false;
+
+                    int i = 0;
+                    foreach (DataRow row in dt.Rows)
+                    {
+                        switch (i)
+                        {
+                            case 0:
+                                pnlMaestro1.Visible = true;
+                                lblId1.Text = (i + 1).ToString();
+                                lblId1.Name = row[0].ToString();
+                                lblName1.Text = row[1].ToString() + " " + row[2].ToString();
+                                string group = CheckGroup(row[3].ToString());
+                                lblGroup1.Text = group;
+                                pnlAddMaestro.Location = new Point(14, 305);
+                                i++;
+                                break;
+                            case 1:
+                                pnlMaestro2.Visible = true;
+                                lblId2.Text = (i + 1).ToString();
+                                lblId2.Name = row[0].ToString();
+                                lblName2.Text = row[1].ToString() + " " + row[2].ToString();
+                                string group1 = CheckGroup(row[3].ToString());
+                                lblGroup2.Text = group1;
+                                pnlAddMaestro.Location = new Point(14, 384);
+                                i++;
+                                break;
+                            case 2:
+                                pnlMaestro3.Visible = true;
+                                lblId3.Name = row[0].ToString();
+                                lblId3.Text = (i + 1).ToString();
+                                lblName3.Text = row[1].ToString() + " " + row[2].ToString();
+                                string group2 = CheckGroup(row[3].ToString());
+                                lblGroup3.Text = group2;
+                                pnlAddMaestro.Location = new Point(14, 460);
+                                i++;
+                                break;
+                            case 3:
+                                pnlMaestro4.Visible = true;
+                                lblId4.Name = row[0].ToString();
+                                lblId4.Text = (i + 1).ToString();
+                                lblName4.Text = row[1].ToString() + " " + row[2].ToString();
+                                string group3 = CheckGroup(row[3].ToString());
+                                lblGroup4.Text = group3;
+                                pnlAddMaestro.Location = new Point(14, 536);
+                                i++;
+                                break;
+                            case 4:
+                                pnlMaestro5.Visible = true;
+                                lblId5.Name = row[0].ToString();
+                                lblId5.Text = (i + 1).ToString();
+                                lblName5.Text = row[1].ToString() + " " + row[2].ToString();
+                                string group4 = CheckGroup(row[3].ToString());
+                                lblGroup5.Text = group4;
+                                pnlAddMaestro.Location = new Point(14, 611);
+                                i++;
+                                break;
+                            case 5:
+                                pnlMaestro6.Visible = true;
+                                lblId6.Name = row[0].ToString();
+                                lblId6.Text = (i + 1).ToString();
+                                lblName6.Text = row[1].ToString() + " " + row[2].ToString();
+                                string group5 = CheckGroup(row[3].ToString());
+                                lblGroup6.Text = group5;
+                                pnlAddMaestro.Location = new Point(14, 686);
+                                i++;
+                                break;
+                        }
+                    }
                 }
             }
         }
@@ -330,7 +401,5 @@ namespace ProyectoEscuela
             tbSearch.Text = string.Empty;
             LoadOptions();
         }
-
-        
     }
 }

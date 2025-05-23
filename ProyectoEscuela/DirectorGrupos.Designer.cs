@@ -54,71 +54,52 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges26 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges23 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges24 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges29 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges30 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges27 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges28 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            panel1 = new Panel();
-            vScrollBar1 = new VScrollBar();
+            pInicio = new Panel();
             guna2Button10 = new Guna.UI2.WinForms.Guna2Button();
-            guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
-            guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            guna2Button7 = new Guna.UI2.WinForms.Guna2Button();
-            guna2Panel6 = new Guna.UI2.WinForms.Guna2Panel();
-            guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            guna2Button13 = new Guna.UI2.WinForms.Guna2Button();
-            guna2Panel5 = new Guna.UI2.WinForms.Guna2Panel();
-            guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
-            guna2Panel7 = new Guna.UI2.WinForms.Guna2Panel();
-            guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            guna2Button8 = new Guna.UI2.WinForms.Guna2Button();
-            guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
-            guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
-            guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
-            guna2HtmlLabel7 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            guna2Button14 = new Guna.UI2.WinForms.Guna2Button();
-            guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            guna2Button6 = new Guna.UI2.WinForms.Guna2Button();
+            pSexto = new Guna.UI2.WinForms.Guna2Panel();
+            lblSexto = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            btnSexto = new Guna.UI2.WinForms.Guna2Button();
+            pCuarto = new Guna.UI2.WinForms.Guna2Panel();
+            lblCuarto = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            btnCuarto = new Guna.UI2.WinForms.Guna2Button();
+            pQuinto = new Guna.UI2.WinForms.Guna2Panel();
+            lblQuinto = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            btnQuinto = new Guna.UI2.WinForms.Guna2Button();
+            pTercero = new Guna.UI2.WinForms.Guna2Panel();
+            lblTercero = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            btnTercero = new Guna.UI2.WinForms.Guna2Button();
+            pSegundo = new Guna.UI2.WinForms.Guna2Panel();
+            lblSegundo = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            btnSegundo = new Guna.UI2.WinForms.Guna2Button();
+            pPrimero = new Guna.UI2.WinForms.Guna2Panel();
+            lblPrimero = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            btnPrimero = new Guna.UI2.WinForms.Guna2Button();
             panel5 = new Panel();
-            panel1.SuspendLayout();
-            guna2Panel2.SuspendLayout();
-            guna2Panel6.SuspendLayout();
-            guna2Panel5.SuspendLayout();
-            guna2Panel7.SuspendLayout();
-            guna2Panel4.SuspendLayout();
-            guna2Panel3.SuspendLayout();
-            guna2Panel1.SuspendLayout();
+            pIndex = new Panel();
+            pInicio.SuspendLayout();
+            pSexto.SuspendLayout();
+            pCuarto.SuspendLayout();
+            pQuinto.SuspendLayout();
+            pTercero.SuspendLayout();
+            pSegundo.SuspendLayout();
+            pPrimero.SuspendLayout();
             SuspendLayout();
             // 
-            // panel1
+            // pInicio
             // 
-            panel1.BackColor = SystemColors.Control;
-            panel1.Controls.Add(vScrollBar1);
-            panel1.Controls.Add(guna2Button10);
-            panel1.Controls.Add(guna2Panel2);
-            panel1.Controls.Add(guna2Panel6);
-            panel1.Controls.Add(guna2Panel5);
-            panel1.Controls.Add(guna2Panel7);
-            panel1.Controls.Add(guna2Panel4);
-            panel1.Controls.Add(guna2Panel3);
-            panel1.Controls.Add(guna2Panel1);
-            panel1.Controls.Add(panel5);
-            panel1.Location = new Point(-17, 1);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(900, 472);
-            panel1.TabIndex = 10;
-            // 
-            // vScrollBar1
-            // 
-            vScrollBar1.Location = new Point(807, 104);
-            vScrollBar1.Minimum = 90;
-            vScrollBar1.Name = "vScrollBar1";
-            vScrollBar1.Size = new Size(23, 368);
-            vScrollBar1.TabIndex = 32;
-            vScrollBar1.Value = 90;
+            pInicio.BackColor = SystemColors.Control;
+            pInicio.Controls.Add(guna2Button10);
+            pInicio.Controls.Add(pSexto);
+            pInicio.Controls.Add(pCuarto);
+            pInicio.Controls.Add(pQuinto);
+            pInicio.Controls.Add(pTercero);
+            pInicio.Controls.Add(pSegundo);
+            pInicio.Controls.Add(pPrimero);
+            pInicio.Controls.Add(panel5);
+            pInicio.Location = new Point(0, 0);
+            pInicio.Name = "pInicio";
+            pInicio.Size = new Size(1190, 682);
+            pInicio.TabIndex = 10;
             // 
             // guna2Button10
             // 
@@ -138,7 +119,7 @@
             guna2Button10.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             guna2Button10.ForeColor = Color.Black;
             guna2Button10.Image = Properties.Resources.imagen_2024_12_12_180347961_removebg_preview;
-            guna2Button10.Location = new Point(349, 8);
+            guna2Button10.Location = new Point(504, 19);
             guna2Button10.Name = "guna2Button10";
             guna2Button10.ShadowDecoration.CustomizableEdges = customizableEdges2;
             guna2Button10.Size = new Size(169, 65);
@@ -146,377 +127,358 @@
             guna2Button10.Text = "Grupos";
             guna2Button10.UseTransparentBackground = true;
             // 
-            // guna2Panel2
+            // pSexto
             // 
-            guna2Panel2.BackColor = Color.White;
-            guna2Panel2.BorderRadius = 10;
-            guna2Panel2.Controls.Add(guna2HtmlLabel4);
-            guna2Panel2.Controls.Add(guna2Button7);
-            guna2Panel2.CustomizableEdges = customizableEdges5;
-            guna2Panel2.Location = new Point(408, 298);
-            guna2Panel2.Name = "guna2Panel2";
-            guna2Panel2.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            guna2Panel2.Size = new Size(179, 150);
-            guna2Panel2.TabIndex = 30;
+            pSexto.BackColor = Color.White;
+            pSexto.BorderRadius = 10;
+            pSexto.Controls.Add(lblSexto);
+            pSexto.Controls.Add(btnSexto);
+            pSexto.CustomizableEdges = customizableEdges5;
+            pSexto.Location = new Point(822, 407);
+            pSexto.Name = "pSexto";
+            pSexto.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            pSexto.Size = new Size(250, 250);
+            pSexto.TabIndex = 29;
+            pSexto.Click += pSexto_Click;
             // 
-            // guna2HtmlLabel4
+            // lblSexto
             // 
-            guna2HtmlLabel4.BackColor = Color.Transparent;
-            guna2HtmlLabel4.Font = new Font("Century Gothic", 12F, FontStyle.Bold);
-            guna2HtmlLabel4.Location = new Point(54, 97);
-            guna2HtmlLabel4.Name = "guna2HtmlLabel4";
-            guna2HtmlLabel4.Size = new Size(68, 21);
-            guna2HtmlLabel4.TabIndex = 17;
-            guna2HtmlLabel4.Text = "Agregar";
+            lblSexto.BackColor = Color.SkyBlue;
+            lblSexto.Font = new Font("Century Gothic", 12F, FontStyle.Bold);
+            lblSexto.Location = new Point(93, 160);
+            lblSexto.Name = "lblSexto";
+            lblSexto.Size = new Size(65, 30);
+            lblSexto.TabIndex = 17;
+            lblSexto.Text = "Sexto";
+            lblSexto.Click += lblSexto_Click;
             // 
-            // guna2Button7
+            // btnSexto
             // 
-            guna2Button7.BackColor = Color.Transparent;
-            guna2Button7.BorderColor = Color.SteelBlue;
-            guna2Button7.BorderRadius = 5;
-            guna2Button7.BorderThickness = 1;
-            guna2Button7.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            guna2Button7.CheckedState.BorderColor = Color.White;
-            guna2Button7.CheckedState.FillColor = Color.White;
-            guna2Button7.CustomizableEdges = customizableEdges3;
-            guna2Button7.DisabledState.BorderColor = Color.DarkGray;
-            guna2Button7.DisabledState.CustomBorderColor = Color.DarkGray;
-            guna2Button7.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            guna2Button7.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            guna2Button7.FillColor = Color.Transparent;
-            guna2Button7.Font = new Font("Century Gothic", 12F, FontStyle.Bold);
-            guna2Button7.ForeColor = Color.White;
-            guna2Button7.Image = Properties.Resources.image_removebg_preview__11_;
-            guna2Button7.Location = new Point(29, 23);
-            guna2Button7.Name = "guna2Button7";
-            guna2Button7.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            guna2Button7.Size = new Size(119, 110);
-            guna2Button7.TabIndex = 16;
-            guna2Button7.UseTransparentBackground = true;
+            btnSexto.BackColor = Color.Transparent;
+            btnSexto.BorderColor = Color.SteelBlue;
+            btnSexto.BorderRadius = 5;
+            btnSexto.BorderThickness = 1;
+            btnSexto.CheckedState.BorderColor = Color.White;
+            btnSexto.CheckedState.FillColor = Color.White;
+            btnSexto.CustomizableEdges = customizableEdges3;
+            btnSexto.DisabledState.BorderColor = Color.DarkGray;
+            btnSexto.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnSexto.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnSexto.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnSexto.FillColor = Color.SkyBlue;
+            btnSexto.Font = new Font("Century Gothic", 12F, FontStyle.Bold);
+            btnSexto.ForeColor = Color.White;
+            btnSexto.HoverState.FillColor = Color.SkyBlue;
+            btnSexto.Image = Properties.Resources.imagen_2024_12_12_180347961_removebg_preview;
+            btnSexto.Location = new Point(50, 50);
+            btnSexto.Name = "btnSexto";
+            btnSexto.PressedColor = Color.SkyBlue;
+            btnSexto.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            btnSexto.Size = new Size(150, 150);
+            btnSexto.TabIndex = 16;
+            btnSexto.UseTransparentBackground = true;
+            btnSexto.Click += btnSexto_Click;
             // 
-            // guna2Panel6
+            // pCuarto
             // 
-            guna2Panel6.BackColor = Color.White;
-            guna2Panel6.BorderRadius = 10;
-            guna2Panel6.Controls.Add(guna2HtmlLabel6);
-            guna2Panel6.Controls.Add(guna2Button13);
-            guna2Panel6.CustomizableEdges = customizableEdges9;
-            guna2Panel6.Location = new Point(219, 298);
-            guna2Panel6.Name = "guna2Panel6";
-            guna2Panel6.ShadowDecoration.CustomizableEdges = customizableEdges10;
-            guna2Panel6.Size = new Size(179, 150);
-            guna2Panel6.TabIndex = 29;
+            pCuarto.BackColor = Color.White;
+            pCuarto.BorderRadius = 10;
+            pCuarto.Controls.Add(lblCuarto);
+            pCuarto.Controls.Add(btnCuarto);
+            pCuarto.CustomizableEdges = customizableEdges9;
+            pCuarto.Location = new Point(108, 407);
+            pCuarto.Name = "pCuarto";
+            pCuarto.ShadowDecoration.CustomizableEdges = customizableEdges10;
+            pCuarto.Size = new Size(250, 250);
+            pCuarto.TabIndex = 27;
+            pCuarto.Click += pCuarto_Click;
             // 
-            // guna2HtmlLabel6
+            // lblCuarto
             // 
-            guna2HtmlLabel6.BackColor = Color.Red;
-            guna2HtmlLabel6.Font = new Font("Century Gothic", 12F, FontStyle.Bold);
-            guna2HtmlLabel6.Location = new Point(75, 97);
-            guna2HtmlLabel6.Name = "guna2HtmlLabel6";
-            guna2HtmlLabel6.Size = new Size(44, 21);
-            guna2HtmlLabel6.TabIndex = 17;
-            guna2HtmlLabel6.Text = "Sexto";
+            lblCuarto.BackColor = Color.SkyBlue;
+            lblCuarto.Font = new Font("Century Gothic", 12F, FontStyle.Bold);
+            lblCuarto.Location = new Point(85, 160);
+            lblCuarto.Name = "lblCuarto";
+            lblCuarto.Size = new Size(82, 30);
+            lblCuarto.TabIndex = 15;
+            lblCuarto.Text = "Cuarto";
+            lblCuarto.Click += lblCuarto_Click;
             // 
-            // guna2Button13
+            // btnCuarto
             // 
-            guna2Button13.BackColor = Color.Transparent;
-            guna2Button13.BorderColor = Color.SteelBlue;
-            guna2Button13.BorderRadius = 5;
-            guna2Button13.BorderThickness = 1;
-            guna2Button13.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            guna2Button13.CheckedState.BorderColor = Color.White;
-            guna2Button13.CheckedState.FillColor = Color.White;
-            guna2Button13.CustomizableEdges = customizableEdges7;
-            guna2Button13.DisabledState.BorderColor = Color.DarkGray;
-            guna2Button13.DisabledState.CustomBorderColor = Color.DarkGray;
-            guna2Button13.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            guna2Button13.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            guna2Button13.FillColor = Color.Red;
-            guna2Button13.Font = new Font("Century Gothic", 12F, FontStyle.Bold);
-            guna2Button13.ForeColor = Color.White;
-            guna2Button13.Image = Properties.Resources.imagen_2024_12_12_180347961_removebg_preview;
-            guna2Button13.Location = new Point(38, 23);
-            guna2Button13.Name = "guna2Button13";
-            guna2Button13.ShadowDecoration.CustomizableEdges = customizableEdges8;
-            guna2Button13.Size = new Size(119, 110);
-            guna2Button13.TabIndex = 16;
-            guna2Button13.UseTransparentBackground = true;
+            btnCuarto.BackColor = Color.Transparent;
+            btnCuarto.BorderColor = Color.SteelBlue;
+            btnCuarto.BorderRadius = 5;
+            btnCuarto.BorderThickness = 1;
+            btnCuarto.CheckedState.BorderColor = Color.White;
+            btnCuarto.CheckedState.FillColor = Color.White;
+            btnCuarto.CustomizableEdges = customizableEdges7;
+            btnCuarto.DisabledState.BorderColor = Color.DarkGray;
+            btnCuarto.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnCuarto.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnCuarto.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnCuarto.FillColor = Color.SkyBlue;
+            btnCuarto.Font = new Font("Century Gothic", 12F, FontStyle.Bold);
+            btnCuarto.ForeColor = Color.White;
+            btnCuarto.HoverState.FillColor = Color.SkyBlue;
+            btnCuarto.Image = Properties.Resources.imagen_2024_12_12_180347961_removebg_preview;
+            btnCuarto.Location = new Point(50, 50);
+            btnCuarto.Name = "btnCuarto";
+            btnCuarto.PressedColor = Color.SkyBlue;
+            btnCuarto.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            btnCuarto.Size = new Size(150, 150);
+            btnCuarto.TabIndex = 14;
+            btnCuarto.UseTransparentBackground = true;
+            btnCuarto.Click += btnCuarto_Click;
             // 
-            // guna2Panel5
+            // pQuinto
             // 
-            guna2Panel5.BackColor = Color.White;
-            guna2Panel5.BorderRadius = 10;
-            guna2Panel5.Controls.Add(guna2HtmlLabel3);
-            guna2Panel5.Controls.Add(guna2Button5);
-            guna2Panel5.CustomizableEdges = customizableEdges13;
-            guna2Panel5.Location = new Point(598, 126);
-            guna2Panel5.Name = "guna2Panel5";
-            guna2Panel5.ShadowDecoration.CustomizableEdges = customizableEdges14;
-            guna2Panel5.Size = new Size(179, 150);
-            guna2Panel5.TabIndex = 27;
+            pQuinto.BackColor = Color.White;
+            pQuinto.BorderRadius = 10;
+            pQuinto.Controls.Add(lblQuinto);
+            pQuinto.Controls.Add(btnQuinto);
+            pQuinto.CustomizableEdges = customizableEdges13;
+            pQuinto.Location = new Point(466, 407);
+            pQuinto.Name = "pQuinto";
+            pQuinto.ShadowDecoration.CustomizableEdges = customizableEdges14;
+            pQuinto.Size = new Size(250, 250);
+            pQuinto.TabIndex = 28;
+            pQuinto.Click += pQuinto_Click;
             // 
-            // guna2HtmlLabel3
+            // lblQuinto
             // 
-            guna2HtmlLabel3.BackColor = Color.FromArgb(255, 192, 128);
-            guna2HtmlLabel3.Font = new Font("Century Gothic", 12F, FontStyle.Bold);
-            guna2HtmlLabel3.Location = new Point(63, 93);
-            guna2HtmlLabel3.Name = "guna2HtmlLabel3";
-            guna2HtmlLabel3.Size = new Size(55, 21);
-            guna2HtmlLabel3.TabIndex = 15;
-            guna2HtmlLabel3.Text = "Cuarto";
+            lblQuinto.BackColor = Color.SkyBlue;
+            lblQuinto.Font = new Font("Century Gothic", 12F, FontStyle.Bold);
+            lblQuinto.Location = new Point(87, 160);
+            lblQuinto.Name = "lblQuinto";
+            lblQuinto.Size = new Size(79, 30);
+            lblQuinto.TabIndex = 16;
+            lblQuinto.Text = "Quinto";
+            lblQuinto.Click += lblQuinto_Click;
             // 
-            // guna2Button5
+            // btnQuinto
             // 
-            guna2Button5.BackColor = Color.Transparent;
-            guna2Button5.BorderColor = Color.SteelBlue;
-            guna2Button5.BorderRadius = 5;
-            guna2Button5.BorderThickness = 1;
-            guna2Button5.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            guna2Button5.CheckedState.BorderColor = Color.White;
-            guna2Button5.CheckedState.FillColor = Color.White;
-            guna2Button5.CustomizableEdges = customizableEdges11;
-            guna2Button5.DisabledState.BorderColor = Color.DarkGray;
-            guna2Button5.DisabledState.CustomBorderColor = Color.DarkGray;
-            guna2Button5.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            guna2Button5.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            guna2Button5.FillColor = Color.FromArgb(255, 192, 128);
-            guna2Button5.Font = new Font("Century Gothic", 12F, FontStyle.Bold);
-            guna2Button5.ForeColor = Color.White;
-            guna2Button5.Image = Properties.Resources.imagen_2024_12_12_180347961_removebg_preview;
-            guna2Button5.Location = new Point(31, 19);
-            guna2Button5.Name = "guna2Button5";
-            guna2Button5.ShadowDecoration.CustomizableEdges = customizableEdges12;
-            guna2Button5.Size = new Size(119, 110);
-            guna2Button5.TabIndex = 14;
-            guna2Button5.UseTransparentBackground = true;
+            btnQuinto.BackColor = Color.Transparent;
+            btnQuinto.BorderColor = Color.SteelBlue;
+            btnQuinto.BorderRadius = 5;
+            btnQuinto.BorderThickness = 1;
+            btnQuinto.CheckedState.BorderColor = Color.White;
+            btnQuinto.CheckedState.FillColor = Color.White;
+            btnQuinto.CustomizableEdges = customizableEdges11;
+            btnQuinto.DisabledState.BorderColor = Color.DarkGray;
+            btnQuinto.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnQuinto.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnQuinto.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnQuinto.FillColor = Color.SkyBlue;
+            btnQuinto.Font = new Font("Century Gothic", 12F, FontStyle.Bold);
+            btnQuinto.ForeColor = Color.White;
+            btnQuinto.HoverState.FillColor = Color.SkyBlue;
+            btnQuinto.Image = Properties.Resources.imagen_2024_12_12_180347961_removebg_preview;
+            btnQuinto.Location = new Point(50, 50);
+            btnQuinto.Name = "btnQuinto";
+            btnQuinto.PressedColor = Color.SkyBlue;
+            btnQuinto.ShadowDecoration.CustomizableEdges = customizableEdges12;
+            btnQuinto.Size = new Size(150, 150);
+            btnQuinto.TabIndex = 15;
+            btnQuinto.UseTransparentBackground = true;
+            btnQuinto.Click += btnQuinto_Click;
             // 
-            // guna2Panel7
+            // pTercero
             // 
-            guna2Panel7.BackColor = Color.White;
-            guna2Panel7.BorderRadius = 10;
-            guna2Panel7.Controls.Add(guna2HtmlLabel5);
-            guna2Panel7.Controls.Add(guna2Button8);
-            guna2Panel7.CustomizableEdges = customizableEdges17;
-            guna2Panel7.Location = new Point(30, 298);
-            guna2Panel7.Name = "guna2Panel7";
-            guna2Panel7.ShadowDecoration.CustomizableEdges = customizableEdges18;
-            guna2Panel7.Size = new Size(179, 150);
-            guna2Panel7.TabIndex = 28;
+            pTercero.BackColor = Color.White;
+            pTercero.BorderRadius = 10;
+            pTercero.Controls.Add(lblTercero);
+            pTercero.Controls.Add(btnTercero);
+            pTercero.CustomizableEdges = customizableEdges17;
+            pTercero.Location = new Point(822, 137);
+            pTercero.Name = "pTercero";
+            pTercero.ShadowDecoration.CustomizableEdges = customizableEdges18;
+            pTercero.Size = new Size(250, 250);
+            pTercero.TabIndex = 26;
+            pTercero.Click += pTercero_Click;
             // 
-            // guna2HtmlLabel5
+            // lblTercero
             // 
-            guna2HtmlLabel5.BackColor = Color.Salmon;
-            guna2HtmlLabel5.Font = new Font("Century Gothic", 12F, FontStyle.Bold);
-            guna2HtmlLabel5.Location = new Point(69, 97);
-            guna2HtmlLabel5.Name = "guna2HtmlLabel5";
-            guna2HtmlLabel5.Size = new Size(54, 21);
-            guna2HtmlLabel5.TabIndex = 16;
-            guna2HtmlLabel5.Text = "Quinto";
+            lblTercero.BackColor = Color.SkyBlue;
+            lblTercero.Font = new Font("Century Gothic", 12F, FontStyle.Bold);
+            lblTercero.Location = new Point(82, 156);
+            lblTercero.Name = "lblTercero";
+            lblTercero.Size = new Size(89, 30);
+            lblTercero.TabIndex = 17;
+            lblTercero.Text = "Tercero";
+            lblTercero.Click += lblTercero_Click;
             // 
-            // guna2Button8
+            // btnTercero
             // 
-            guna2Button8.BackColor = Color.Transparent;
-            guna2Button8.BorderColor = Color.SteelBlue;
-            guna2Button8.BorderRadius = 5;
-            guna2Button8.BorderThickness = 1;
-            guna2Button8.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            guna2Button8.CheckedState.BorderColor = Color.White;
-            guna2Button8.CheckedState.FillColor = Color.White;
-            guna2Button8.CustomizableEdges = customizableEdges15;
-            guna2Button8.DisabledState.BorderColor = Color.DarkGray;
-            guna2Button8.DisabledState.CustomBorderColor = Color.DarkGray;
-            guna2Button8.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            guna2Button8.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            guna2Button8.FillColor = Color.Salmon;
-            guna2Button8.Font = new Font("Century Gothic", 12F, FontStyle.Bold);
-            guna2Button8.ForeColor = Color.White;
-            guna2Button8.Image = Properties.Resources.imagen_2024_12_12_180347961_removebg_preview;
-            guna2Button8.Location = new Point(37, 23);
-            guna2Button8.Name = "guna2Button8";
-            guna2Button8.ShadowDecoration.CustomizableEdges = customizableEdges16;
-            guna2Button8.Size = new Size(119, 110);
-            guna2Button8.TabIndex = 15;
-            guna2Button8.UseTransparentBackground = true;
+            btnTercero.BackColor = Color.Transparent;
+            btnTercero.BorderColor = Color.SteelBlue;
+            btnTercero.BorderRadius = 5;
+            btnTercero.BorderThickness = 1;
+            btnTercero.CheckedState.BorderColor = Color.White;
+            btnTercero.CheckedState.FillColor = Color.White;
+            btnTercero.CustomizableEdges = customizableEdges15;
+            btnTercero.DisabledState.BorderColor = Color.DarkGray;
+            btnTercero.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnTercero.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnTercero.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnTercero.FillColor = Color.SkyBlue;
+            btnTercero.Font = new Font("Century Gothic", 12F, FontStyle.Bold);
+            btnTercero.ForeColor = Color.White;
+            btnTercero.HoverState.FillColor = Color.SkyBlue;
+            btnTercero.Image = Properties.Resources.imagen_2024_12_12_180347961_removebg_preview;
+            btnTercero.Location = new Point(50, 50);
+            btnTercero.Name = "btnTercero";
+            btnTercero.PressedColor = Color.SkyBlue;
+            btnTercero.ShadowDecoration.CustomizableEdges = customizableEdges16;
+            btnTercero.Size = new Size(150, 150);
+            btnTercero.TabIndex = 16;
+            btnTercero.UseTransparentBackground = true;
+            btnTercero.Click += btnTercero_Click;
             // 
-            // guna2Panel4
+            // pSegundo
             // 
-            guna2Panel4.BackColor = Color.White;
-            guna2Panel4.BorderRadius = 10;
-            guna2Panel4.Controls.Add(guna2HtmlLabel2);
-            guna2Panel4.Controls.Add(guna2Button4);
-            guna2Panel4.CustomizableEdges = customizableEdges21;
-            guna2Panel4.Location = new Point(408, 126);
-            guna2Panel4.Name = "guna2Panel4";
-            guna2Panel4.ShadowDecoration.CustomizableEdges = customizableEdges22;
-            guna2Panel4.Size = new Size(179, 150);
-            guna2Panel4.TabIndex = 26;
+            pSegundo.BackColor = Color.White;
+            pSegundo.BorderRadius = 10;
+            pSegundo.Controls.Add(lblSegundo);
+            pSegundo.Controls.Add(btnSegundo);
+            pSegundo.CustomizableEdges = customizableEdges21;
+            pSegundo.Location = new Point(462, 137);
+            pSegundo.Name = "pSegundo";
+            pSegundo.ShadowDecoration.CustomizableEdges = customizableEdges22;
+            pSegundo.Size = new Size(250, 250);
+            pSegundo.TabIndex = 25;
+            pSegundo.Click += pSegundo_Click;
             // 
-            // guna2HtmlLabel2
+            // lblSegundo
             // 
-            guna2HtmlLabel2.BackColor = Color.FromArgb(255, 255, 128);
-            guna2HtmlLabel2.Font = new Font("Century Gothic", 12F, FontStyle.Bold);
-            guna2HtmlLabel2.Location = new Point(57, 93);
-            guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            guna2HtmlLabel2.Size = new Size(60, 21);
-            guna2HtmlLabel2.TabIndex = 17;
-            guna2HtmlLabel2.Text = "Tercero";
+            lblSegundo.BackColor = Color.SkyBlue;
+            lblSegundo.Font = new Font("Century Gothic", 12F, FontStyle.Bold);
+            lblSegundo.Location = new Point(73, 156);
+            lblSegundo.Name = "lblSegundo";
+            lblSegundo.Size = new Size(105, 30);
+            lblSegundo.TabIndex = 13;
+            lblSegundo.Text = "Segundo";
+            lblSegundo.Click += lblSegundo_Click;
             // 
-            // guna2Button4
+            // btnSegundo
             // 
-            guna2Button4.BackColor = Color.Transparent;
-            guna2Button4.BorderColor = Color.SteelBlue;
-            guna2Button4.BorderRadius = 5;
-            guna2Button4.BorderThickness = 1;
-            guna2Button4.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            guna2Button4.CheckedState.BorderColor = Color.White;
-            guna2Button4.CheckedState.FillColor = Color.White;
-            guna2Button4.CustomizableEdges = customizableEdges19;
-            guna2Button4.DisabledState.BorderColor = Color.DarkGray;
-            guna2Button4.DisabledState.CustomBorderColor = Color.DarkGray;
-            guna2Button4.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            guna2Button4.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            guna2Button4.FillColor = Color.FromArgb(255, 255, 128);
-            guna2Button4.Font = new Font("Century Gothic", 12F, FontStyle.Bold);
-            guna2Button4.ForeColor = Color.White;
-            guna2Button4.Image = Properties.Resources.imagen_2024_12_12_180347961_removebg_preview;
-            guna2Button4.Location = new Point(29, 19);
-            guna2Button4.Name = "guna2Button4";
-            guna2Button4.ShadowDecoration.CustomizableEdges = customizableEdges20;
-            guna2Button4.Size = new Size(119, 110);
-            guna2Button4.TabIndex = 16;
-            guna2Button4.UseTransparentBackground = true;
+            btnSegundo.BackColor = Color.Transparent;
+            btnSegundo.BorderColor = Color.SteelBlue;
+            btnSegundo.BorderRadius = 5;
+            btnSegundo.BorderThickness = 1;
+            btnSegundo.CheckedState.BorderColor = Color.White;
+            btnSegundo.CheckedState.FillColor = Color.White;
+            btnSegundo.CustomizableEdges = customizableEdges19;
+            btnSegundo.DisabledState.BorderColor = Color.DarkGray;
+            btnSegundo.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnSegundo.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnSegundo.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnSegundo.FillColor = Color.SkyBlue;
+            btnSegundo.Font = new Font("Century Gothic", 12F, FontStyle.Bold);
+            btnSegundo.ForeColor = Color.White;
+            btnSegundo.HoverState.FillColor = Color.SkyBlue;
+            btnSegundo.Image = Properties.Resources.imagen_2024_12_12_180347961_removebg_preview;
+            btnSegundo.Location = new Point(50, 50);
+            btnSegundo.Name = "btnSegundo";
+            btnSegundo.PressedColor = Color.SkyBlue;
+            btnSegundo.ShadowDecoration.CustomizableEdges = customizableEdges20;
+            btnSegundo.Size = new Size(150, 150);
+            btnSegundo.TabIndex = 12;
+            btnSegundo.UseTransparentBackground = true;
+            btnSegundo.Click += btnSegundo_Click;
             // 
-            // guna2Panel3
+            // pPrimero
             // 
-            guna2Panel3.BackColor = Color.White;
-            guna2Panel3.BorderRadius = 10;
-            guna2Panel3.Controls.Add(guna2HtmlLabel7);
-            guna2Panel3.Controls.Add(guna2Button14);
-            guna2Panel3.CustomizableEdges = customizableEdges25;
-            guna2Panel3.Location = new Point(219, 126);
-            guna2Panel3.Name = "guna2Panel3";
-            guna2Panel3.ShadowDecoration.CustomizableEdges = customizableEdges26;
-            guna2Panel3.Size = new Size(179, 150);
-            guna2Panel3.TabIndex = 25;
+            pPrimero.BackColor = Color.White;
+            pPrimero.BorderRadius = 10;
+            pPrimero.Controls.Add(lblPrimero);
+            pPrimero.Controls.Add(btnPrimero);
+            pPrimero.CustomizableEdges = customizableEdges25;
+            pPrimero.Location = new Point(108, 137);
+            pPrimero.Name = "pPrimero";
+            pPrimero.ShadowDecoration.CustomizableEdges = customizableEdges26;
+            pPrimero.Size = new Size(250, 250);
+            pPrimero.TabIndex = 24;
+            pPrimero.Click += pPrimero_Click;
             // 
-            // guna2HtmlLabel7
+            // lblPrimero
             // 
-            guna2HtmlLabel7.BackColor = Color.LightGreen;
-            guna2HtmlLabel7.Font = new Font("Century Gothic", 12F, FontStyle.Bold);
-            guna2HtmlLabel7.Location = new Point(60, 93);
-            guna2HtmlLabel7.Name = "guna2HtmlLabel7";
-            guna2HtmlLabel7.Size = new Size(73, 21);
-            guna2HtmlLabel7.TabIndex = 13;
-            guna2HtmlLabel7.Text = "Segundo";
+            lblPrimero.BackColor = Color.SkyBlue;
+            lblPrimero.Font = new Font("Century Gothic", 12F, FontStyle.Bold);
+            lblPrimero.Location = new Point(81, 156);
+            lblPrimero.Name = "lblPrimero";
+            lblPrimero.Size = new Size(91, 30);
+            lblPrimero.TabIndex = 10;
+            lblPrimero.Text = "Primero";
+            lblPrimero.Click += lblPrimero_Click;
             // 
-            // guna2Button14
+            // btnPrimero
             // 
-            guna2Button14.BackColor = Color.Transparent;
-            guna2Button14.BorderColor = Color.SteelBlue;
-            guna2Button14.BorderRadius = 5;
-            guna2Button14.BorderThickness = 1;
-            guna2Button14.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            guna2Button14.CheckedState.BorderColor = Color.White;
-            guna2Button14.CheckedState.FillColor = Color.White;
-            guna2Button14.CustomizableEdges = customizableEdges23;
-            guna2Button14.DisabledState.BorderColor = Color.DarkGray;
-            guna2Button14.DisabledState.CustomBorderColor = Color.DarkGray;
-            guna2Button14.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            guna2Button14.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            guna2Button14.FillColor = Color.LightGreen;
-            guna2Button14.Font = new Font("Century Gothic", 12F, FontStyle.Bold);
-            guna2Button14.ForeColor = Color.White;
-            guna2Button14.Image = Properties.Resources.imagen_2024_12_12_180347961_removebg_preview;
-            guna2Button14.Location = new Point(38, 19);
-            guna2Button14.Name = "guna2Button14";
-            guna2Button14.ShadowDecoration.CustomizableEdges = customizableEdges24;
-            guna2Button14.Size = new Size(119, 110);
-            guna2Button14.TabIndex = 12;
-            guna2Button14.UseTransparentBackground = true;
-            // 
-            // guna2Panel1
-            // 
-            guna2Panel1.BackColor = Color.White;
-            guna2Panel1.BorderRadius = 10;
-            guna2Panel1.Controls.Add(guna2HtmlLabel1);
-            guna2Panel1.Controls.Add(guna2Button6);
-            guna2Panel1.CustomizableEdges = customizableEdges29;
-            guna2Panel1.Location = new Point(30, 126);
-            guna2Panel1.Name = "guna2Panel1";
-            guna2Panel1.ShadowDecoration.CustomizableEdges = customizableEdges30;
-            guna2Panel1.Size = new Size(179, 150);
-            guna2Panel1.TabIndex = 24;
-            // 
-            // guna2HtmlLabel1
-            // 
-            guna2HtmlLabel1.BackColor = Color.SeaGreen;
-            guna2HtmlLabel1.Font = new Font("Century Gothic", 12F, FontStyle.Bold);
-            guna2HtmlLabel1.Location = new Point(55, 99);
-            guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            guna2HtmlLabel1.Size = new Size(62, 21);
-            guna2HtmlLabel1.TabIndex = 10;
-            guna2HtmlLabel1.Text = "Primero";
-            // 
-            // guna2Button6
-            // 
-            guna2Button6.BackColor = Color.Transparent;
-            guna2Button6.BorderColor = Color.SteelBlue;
-            guna2Button6.BorderRadius = 5;
-            guna2Button6.BorderThickness = 1;
-            guna2Button6.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            guna2Button6.CheckedState.BorderColor = Color.White;
-            guna2Button6.CheckedState.FillColor = Color.White;
-            guna2Button6.CustomizableEdges = customizableEdges27;
-            guna2Button6.DisabledState.BorderColor = Color.DarkGray;
-            guna2Button6.DisabledState.CustomBorderColor = Color.DarkGray;
-            guna2Button6.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            guna2Button6.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            guna2Button6.FillColor = Color.SeaGreen;
-            guna2Button6.Font = new Font("Century Gothic", 12F, FontStyle.Bold);
-            guna2Button6.ForeColor = Color.White;
-            guna2Button6.Image = Properties.Resources.imagen_2024_12_12_180347961_removebg_preview;
-            guna2Button6.Location = new Point(28, 19);
-            guna2Button6.Name = "guna2Button6";
-            guna2Button6.ShadowDecoration.CustomizableEdges = customizableEdges28;
-            guna2Button6.Size = new Size(119, 110);
-            guna2Button6.TabIndex = 4;
-            guna2Button6.UseTransparentBackground = true;
+            btnPrimero.BackColor = Color.Transparent;
+            btnPrimero.BorderColor = Color.SteelBlue;
+            btnPrimero.BorderRadius = 5;
+            btnPrimero.BorderThickness = 1;
+            btnPrimero.CheckedState.BorderColor = Color.White;
+            btnPrimero.CheckedState.FillColor = Color.White;
+            btnPrimero.CustomizableEdges = customizableEdges23;
+            btnPrimero.DisabledState.BorderColor = Color.DarkGray;
+            btnPrimero.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnPrimero.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnPrimero.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnPrimero.FillColor = Color.SkyBlue;
+            btnPrimero.Font = new Font("Century Gothic", 12F, FontStyle.Bold);
+            btnPrimero.ForeColor = Color.White;
+            btnPrimero.HoverState.FillColor = Color.SkyBlue;
+            btnPrimero.Image = Properties.Resources.imagen_2024_12_12_180347961_removebg_preview;
+            btnPrimero.Location = new Point(50, 50);
+            btnPrimero.Name = "btnPrimero";
+            btnPrimero.PressedColor = Color.SkyBlue;
+            btnPrimero.ShadowDecoration.CustomizableEdges = customizableEdges24;
+            btnPrimero.Size = new Size(150, 150);
+            btnPrimero.TabIndex = 4;
+            btnPrimero.UseTransparentBackground = true;
+            btnPrimero.Click += btnPrimero_Click;
             // 
             // panel5
             // 
             panel5.BackColor = Color.White;
-            panel5.Location = new Point(0, 79);
+            panel5.Location = new Point(0, 90);
             panel5.Name = "panel5";
-            panel5.Size = new Size(900, 22);
+            panel5.Size = new Size(1190, 23);
             panel5.TabIndex = 23;
+            // 
+            // pIndex
+            // 
+            pIndex.Location = new Point(0, 0);
+            pIndex.Name = "pIndex";
+            pIndex.Size = new Size(1190, 682);
+            pIndex.TabIndex = 11;
             // 
             // DirectorGrupos
             // 
-            AutoScaleDimensions = new SizeF(9F, 19F);
+            AutoScaleDimensions = new SizeF(14F, 28F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(845, 513);
-            Controls.Add(panel1);
+            ClientSize = new Size(1189, 682);
+            Controls.Add(pInicio);
+            Controls.Add(pIndex);
             Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(4);
             Name = "DirectorGrupos";
             Text = "DirectorGrupos";
-            Load += DirectorGrupos_Load;
-            panel1.ResumeLayout(false);
-            guna2Panel2.ResumeLayout(false);
-            guna2Panel2.PerformLayout();
-            guna2Panel6.ResumeLayout(false);
-            guna2Panel6.PerformLayout();
-            guna2Panel5.ResumeLayout(false);
-            guna2Panel5.PerformLayout();
-            guna2Panel7.ResumeLayout(false);
-            guna2Panel7.PerformLayout();
-            guna2Panel4.ResumeLayout(false);
-            guna2Panel4.PerformLayout();
-            guna2Panel3.ResumeLayout(false);
-            guna2Panel3.PerformLayout();
-            guna2Panel1.ResumeLayout(false);
-            guna2Panel1.PerformLayout();
+            pInicio.ResumeLayout(false);
+            pSexto.ResumeLayout(false);
+            pSexto.PerformLayout();
+            pCuarto.ResumeLayout(false);
+            pCuarto.PerformLayout();
+            pQuinto.ResumeLayout(false);
+            pQuinto.PerformLayout();
+            pTercero.ResumeLayout(false);
+            pTercero.PerformLayout();
+            pSegundo.ResumeLayout(false);
+            pSegundo.PerformLayout();
+            pPrimero.ResumeLayout(false);
+            pPrimero.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -530,35 +492,32 @@
         private Guna.UI2.WinForms.Guna2Button guna2Button11;
         private Label label6;
         private Label label5;
-        private Panel panel1;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;
-        private Guna.UI2.WinForms.Guna2Button guna2Button7;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel6;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel6;
-        private Guna.UI2.WinForms.Guna2Button guna2Button13;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel5;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
-        private Guna.UI2.WinForms.Guna2Button guna2Button5;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel7;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel5;
-        private Guna.UI2.WinForms.Guna2Button guna2Button8;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel4;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
-        private Guna.UI2.WinForms.Guna2Button guna2Button4;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel3;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel7;
-        private Guna.UI2.WinForms.Guna2Button guna2Button14;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
-        private Guna.UI2.WinForms.Guna2Button guna2Button6;
+        private Panel pInicio;
+        private Guna.UI2.WinForms.Guna2Panel pSexto;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblSexto;
+        private Guna.UI2.WinForms.Guna2Button btnSexto;
+        private Guna.UI2.WinForms.Guna2Panel pCuarto;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblCuarto;
+        private Guna.UI2.WinForms.Guna2Button btnCuarto;
+        private Guna.UI2.WinForms.Guna2Panel pQuinto;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblQuinto;
+        private Guna.UI2.WinForms.Guna2Button btnQuinto;
+        private Guna.UI2.WinForms.Guna2Panel pTercero;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblTercero;
+        private Guna.UI2.WinForms.Guna2Button btnTercero;
+        private Guna.UI2.WinForms.Guna2Panel pSegundo;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblSegundo;
+        private Guna.UI2.WinForms.Guna2Button btnSegundo;
+        private Guna.UI2.WinForms.Guna2Panel pPrimero;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblPrimero;
+        private Guna.UI2.WinForms.Guna2Button btnPrimero;
         private Panel panel5;
-        private VScrollBar vScrollBar1;
         private Guna.UI2.WinForms.Guna2Button guna2Button10;
         private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel1;
         private Guna.UI2.WinForms.Guna2Button guna2Button9;
         private Guna.UI2.WinForms.Guna2Button guna2Button3;
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Panel pIndex;
     }
 }

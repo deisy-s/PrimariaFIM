@@ -198,10 +198,10 @@
             // lblAddTeacher
             // 
             lblAddTeacher.AutoSize = true;
-            lblAddTeacher.Font = new Font("Century Gothic", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblAddTeacher.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblAddTeacher.Location = new Point(123, 22);
             lblAddTeacher.Name = "lblAddTeacher";
-            lblAddTeacher.Size = new Size(241, 23);
+            lblAddTeacher.Size = new Size(289, 28);
             lblAddTeacher.TabIndex = 35;
             lblAddTeacher.Text = "Agregar nuevo maestro";
             lblAddTeacher.Click += lblAddTeacher_Click;
@@ -290,10 +290,10 @@
             // lblGroup6
             // 
             lblGroup6.AutoSize = true;
-            lblGroup6.Font = new Font("Century Gothic", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblGroup6.Location = new Point(651, 22);
+            lblGroup6.Font = new Font("Century Gothic", 12F, FontStyle.Bold);
+            lblGroup6.Location = new Point(636, 22);
             lblGroup6.Name = "lblGroup6";
-            lblGroup6.Size = new Size(67, 23);
+            lblGroup6.Size = new Size(81, 28);
             lblGroup6.TabIndex = 36;
             lblGroup6.Text = "grupo";
             lblGroup6.TextAlign = ContentAlignment.TopCenter;
@@ -301,20 +301,20 @@
             // lblName6
             // 
             lblName6.AutoSize = true;
-            lblName6.Font = new Font("Century Gothic", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblName6.Font = new Font("Century Gothic", 12F, FontStyle.Bold);
             lblName6.Location = new Point(205, 22);
             lblName6.Name = "lblName6";
-            lblName6.Size = new Size(86, 23);
+            lblName6.Size = new Size(103, 28);
             lblName6.TabIndex = 36;
             lblName6.Text = "nombre";
             // 
             // lblId6
             // 
             lblId6.AutoSize = true;
-            lblId6.Font = new Font("Century Gothic", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblId6.Font = new Font("Century Gothic", 12F, FontStyle.Bold);
             lblId6.Location = new Point(123, 22);
             lblId6.Name = "lblId6";
-            lblId6.Size = new Size(28, 23);
+            lblId6.Size = new Size(34, 28);
             lblId6.TabIndex = 35;
             lblId6.Text = "id";
             // 
@@ -401,10 +401,10 @@
             // lblGroup5
             // 
             lblGroup5.AutoSize = true;
-            lblGroup5.Font = new Font("Century Gothic", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblGroup5.Location = new Point(651, 22);
+            lblGroup5.Font = new Font("Century Gothic", 12F, FontStyle.Bold);
+            lblGroup5.Location = new Point(636, 22);
             lblGroup5.Name = "lblGroup5";
-            lblGroup5.Size = new Size(67, 23);
+            lblGroup5.Size = new Size(81, 28);
             lblGroup5.TabIndex = 36;
             lblGroup5.Text = "grupo";
             lblGroup5.TextAlign = ContentAlignment.TopCenter;
@@ -412,20 +412,20 @@
             // lblName5
             // 
             lblName5.AutoSize = true;
-            lblName5.Font = new Font("Century Gothic", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblName5.Font = new Font("Century Gothic", 12F, FontStyle.Bold);
             lblName5.Location = new Point(205, 22);
             lblName5.Name = "lblName5";
-            lblName5.Size = new Size(86, 23);
+            lblName5.Size = new Size(103, 28);
             lblName5.TabIndex = 36;
             lblName5.Text = "nombre";
             // 
             // lblId5
             // 
             lblId5.AutoSize = true;
-            lblId5.Font = new Font("Century Gothic", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblId5.Font = new Font("Century Gothic", 12F, FontStyle.Bold);
             lblId5.Location = new Point(123, 22);
             lblId5.Name = "lblId5";
-            lblId5.Size = new Size(28, 23);
+            lblId5.Size = new Size(34, 28);
             lblId5.TabIndex = 35;
             lblId5.Text = "id";
             // 
@@ -512,10 +512,10 @@
             // lblGroup4
             // 
             lblGroup4.AutoSize = true;
-            lblGroup4.Font = new Font("Century Gothic", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblGroup4.Location = new Point(651, 22);
+            lblGroup4.Font = new Font("Century Gothic", 12F, FontStyle.Bold);
+            lblGroup4.Location = new Point(636, 22);
             lblGroup4.Name = "lblGroup4";
-            lblGroup4.Size = new Size(67, 23);
+            lblGroup4.Size = new Size(81, 28);
             lblGroup4.TabIndex = 36;
             lblGroup4.Text = "grupo";
             lblGroup4.TextAlign = ContentAlignment.TopCenter;
@@ -523,20 +523,20 @@
             // lblName4
             // 
             lblName4.AutoSize = true;
-            lblName4.Font = new Font("Century Gothic", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblName4.Font = new Font("Century Gothic", 12F, FontStyle.Bold);
             lblName4.Location = new Point(205, 22);
             lblName4.Name = "lblName4";
-            lblName4.Size = new Size(86, 23);
+            lblName4.Size = new Size(103, 28);
             lblName4.TabIndex = 36;
             lblName4.Text = "nombre";
             // 
             // lblId4
             // 
             lblId4.AutoSize = true;
-            lblId4.Font = new Font("Century Gothic", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblId4.Font = new Font("Century Gothic", 12F, FontStyle.Bold);
             lblId4.Location = new Point(123, 22);
             lblId4.Name = "lblId4";
-            lblId4.Size = new Size(28, 23);
+            lblId4.Size = new Size(34, 28);
             lblId4.TabIndex = 35;
             lblId4.Text = "id";
             // 
@@ -623,10 +623,10 @@
             // lblGroup3
             // 
             lblGroup3.AutoSize = true;
-            lblGroup3.Font = new Font("Century Gothic", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblGroup3.Location = new Point(651, 22);
+            lblGroup3.Font = new Font("Century Gothic", 12F, FontStyle.Bold);
+            lblGroup3.Location = new Point(636, 23);
             lblGroup3.Name = "lblGroup3";
-            lblGroup3.Size = new Size(67, 23);
+            lblGroup3.Size = new Size(81, 28);
             lblGroup3.TabIndex = 36;
             lblGroup3.Text = "grupo";
             lblGroup3.TextAlign = ContentAlignment.TopCenter;
@@ -634,20 +634,20 @@
             // lblName3
             // 
             lblName3.AutoSize = true;
-            lblName3.Font = new Font("Century Gothic", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblName3.Font = new Font("Century Gothic", 12F, FontStyle.Bold);
             lblName3.Location = new Point(205, 22);
             lblName3.Name = "lblName3";
-            lblName3.Size = new Size(86, 23);
+            lblName3.Size = new Size(103, 28);
             lblName3.TabIndex = 36;
             lblName3.Text = "nombre";
             // 
             // lblId3
             // 
             lblId3.AutoSize = true;
-            lblId3.Font = new Font("Century Gothic", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblId3.Font = new Font("Century Gothic", 12F, FontStyle.Bold);
             lblId3.Location = new Point(123, 22);
             lblId3.Name = "lblId3";
-            lblId3.Size = new Size(28, 23);
+            lblId3.Size = new Size(34, 28);
             lblId3.TabIndex = 35;
             lblId3.Text = "id";
             // 
@@ -734,10 +734,10 @@
             // lblGroup2
             // 
             lblGroup2.AutoSize = true;
-            lblGroup2.Font = new Font("Century Gothic", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblGroup2.Location = new Point(651, 22);
+            lblGroup2.Font = new Font("Century Gothic", 12F, FontStyle.Bold);
+            lblGroup2.Location = new Point(636, 23);
             lblGroup2.Name = "lblGroup2";
-            lblGroup2.Size = new Size(67, 23);
+            lblGroup2.Size = new Size(81, 28);
             lblGroup2.TabIndex = 36;
             lblGroup2.Text = "grupo";
             lblGroup2.TextAlign = ContentAlignment.TopCenter;
@@ -745,20 +745,20 @@
             // lblName2
             // 
             lblName2.AutoSize = true;
-            lblName2.Font = new Font("Century Gothic", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblName2.Font = new Font("Century Gothic", 12F, FontStyle.Bold);
             lblName2.Location = new Point(205, 22);
             lblName2.Name = "lblName2";
-            lblName2.Size = new Size(86, 23);
+            lblName2.Size = new Size(103, 28);
             lblName2.TabIndex = 36;
             lblName2.Text = "nombre";
             // 
             // lblId2
             // 
             lblId2.AutoSize = true;
-            lblId2.Font = new Font("Century Gothic", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblId2.Font = new Font("Century Gothic", 12F, FontStyle.Bold);
             lblId2.Location = new Point(123, 22);
             lblId2.Name = "lblId2";
-            lblId2.Size = new Size(28, 23);
+            lblId2.Size = new Size(34, 28);
             lblId2.TabIndex = 35;
             lblId2.Text = "id";
             // 
@@ -844,10 +844,10 @@
             // lblGroup1
             // 
             lblGroup1.AutoSize = true;
-            lblGroup1.Font = new Font("Century Gothic", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblGroup1.Location = new Point(651, 22);
+            lblGroup1.Font = new Font("Century Gothic", 12F, FontStyle.Bold);
+            lblGroup1.Location = new Point(636, 25);
             lblGroup1.Name = "lblGroup1";
-            lblGroup1.Size = new Size(67, 23);
+            lblGroup1.Size = new Size(81, 28);
             lblGroup1.TabIndex = 36;
             lblGroup1.Text = "grupo";
             lblGroup1.TextAlign = ContentAlignment.TopCenter;
@@ -855,20 +855,20 @@
             // lblName1
             // 
             lblName1.AutoSize = true;
-            lblName1.Font = new Font("Century Gothic", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblName1.Font = new Font("Century Gothic", 12F, FontStyle.Bold);
             lblName1.Location = new Point(205, 22);
             lblName1.Name = "lblName1";
-            lblName1.Size = new Size(86, 23);
+            lblName1.Size = new Size(103, 28);
             lblName1.TabIndex = 36;
             lblName1.Text = "nombre";
             // 
             // lblId1
             // 
             lblId1.AutoSize = true;
-            lblId1.Font = new Font("Century Gothic", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblId1.Font = new Font("Century Gothic", 12F, FontStyle.Bold);
             lblId1.Location = new Point(123, 22);
             lblId1.Name = "lblId1";
-            lblId1.Size = new Size(28, 23);
+            lblId1.Size = new Size(34, 28);
             lblId1.TabIndex = 35;
             lblId1.Text = "id";
             // 
@@ -987,7 +987,7 @@
             guna2Button10.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             guna2Button10.ForeColor = Color.Black;
             guna2Button10.Image = Properties.Resources.image_removebg_preview__10_1;
-            guna2Button10.Location = new Point(563, 19);
+            guna2Button10.Location = new Point(504, 19);
             guna2Button10.Name = "guna2Button10";
             guna2Button10.ShadowDecoration.CustomizableEdges = customizableEdges56;
             guna2Button10.Size = new Size(169, 65);
@@ -1019,8 +1019,7 @@
             btnClearSearch.FillColor = Color.LightSkyBlue;
             btnClearSearch.Font = new Font("Segoe UI", 9F);
             btnClearSearch.ForeColor = Color.White;
-            btnClearSearch.Image = Properties.Resources.image_removebg_preview;
-            btnClearSearch.ImageSize = new Size(50, 50);
+            btnClearSearch.Image = Properties.Resources.actualizar_flecha;
             btnClearSearch.Location = new Point(1127, 10);
             btnClearSearch.Name = "btnClearSearch";
             btnClearSearch.ShadowDecoration.CustomizableEdges = customizableEdges58;

@@ -217,7 +217,7 @@
             Font = new Font("Microsoft Sans Serif", 8.25F);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             Name = "Login";
-            Text = "Login";
+            Text = "Inicio de sesión";
             panel1.ResumeLayout(false);
             panel2.ResumeLayout(false);
             panel2.PerformLayout();

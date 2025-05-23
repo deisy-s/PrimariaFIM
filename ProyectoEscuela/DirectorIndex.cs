@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DevExpress.Office.Drawing;
 using ReglasDeNegocio;
 
 namespace ProyectoEscuela
@@ -14,10 +15,14 @@ namespace ProyectoEscuela
     public partial class DirectorIndex : Form
     {
         MySQLDirector direClass = new MySQLDirector();
+        bool arrastre = false;
+        Point startPoint = new Point(0, 0);
 
         public DirectorIndex()
         {
             InitializeComponent();
+            this.AutoScaleMode = AutoScaleMode.None;
+            this.Font = new Font("Century Gothic", 12, FontStyle.Bold);
         }
 
         private void DirectorIndex_Load(object sender, EventArgs e)
@@ -54,7 +59,9 @@ namespace ProyectoEscuela
         private void btnInicio_Click(object sender, EventArgs e)
         {
             pInicio.Visible = true;
-
+            btnEvaluaciones1.Checked = false;
+            btnMaestros1.Checked = false;
+            btnGrupos1.Checked = false;
         }
         public void abrirEvaluaciones()
         {
@@ -115,6 +122,41 @@ namespace ProyectoEscuela
             {
                 lblNombre.Text = direClass.GetName();
             }
+        }
+
+        private void btnEvaluaciones1_Click(object sender, EventArgs e)
+        {
+            abrirEvaluaciones();
+        }
+
+        private void btnEvaluaciones2_Click(object sender, EventArgs e)
+        {
+            abrirEvaluaciones();
+        }
+
+        private void panel4_MouseDown(object sender, MouseEventArgs e)
+        {
+            arrastre = true;
+            startPoint = e.Location;
+        }
+
+        private void panel4_MouseUp(object sender, MouseEventArgs e)
+        {
+            arrastre = false;
+        }
+
+        private void panel4_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (arrastre)
+            {
+                Point p = PointToScreen(e.Location);
+                Location = new Point(p.X - startPoint.X, p.Y - startPoint.Y);
+            }
+        }
+
+        private void btnMinimizar_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
         }
     }
 }

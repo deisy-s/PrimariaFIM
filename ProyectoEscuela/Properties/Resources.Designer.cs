@@ -63,6 +63,16 @@ namespace ProyectoEscuela.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap actualizar_flecha {
+            get {
+                object obj = ResourceManager.GetObject("actualizar-flecha", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap descargar__3_ {
             get {
                 object obj = ResourceManager.GetObject("descargar (3)", resourceCulture);
@@ -213,6 +223,16 @@ namespace ProyectoEscuela.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap image_removebg_preview__4_1 {
+            get {
+                object obj = ResourceManager.GetObject("image-removebg-preview (4)1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap image_removebg_preview__5_ {
             get {
                 object obj = ResourceManager.GetObject("image-removebg-preview (5)", resourceCulture);
@@ -316,6 +336,36 @@ namespace ProyectoEscuela.Properties {
         internal static System.Drawing.Bitmap LogoProyectoPrimaria_removebg_preview {
             get {
                 object obj = ResourceManager.GetObject("LogoProyectoPrimaria-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap logoSEP {
+            get {
+                object obj = ResourceManager.GetObject("logoSEP", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap menos {
+            get {
+                object obj = ResourceManager.GetObject("menos", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap menos1 {
+            get {
+                object obj = ResourceManager.GetObject("menos1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

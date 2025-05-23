@@ -2,16 +2,30 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net8.0-windows</TargetFramework>
+    <TargetFramework>net8.0-windows7.0</TargetFramework>
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
+    <AssemblyName>ProyectoEscuela</AssemblyName>
+    <RootNamespace>ProyectoEscuela</RootNamespace>
+    <AssemblyVersion>1.0.0.1</AssemblyVersion>
+    <FileVersion>1.0.0.1</FileVersion>
+    <PackageReleaseNotes>Gestor de datos para manejar la información de alumnos, calificaciones finales y resultados de evaluaciones SisAT.</PackageReleaseNotes>
+    <ApplicationIcon>marking.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Include="marking.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Aspose.PDF" Version="25.3.0" />
+    <PackageReference Include="Aspose.Words" Version="25.3.0" />
     <PackageReference Include="DevExpress.Win.Design" Version="22.2.3" />
     <PackageReference Include="Guna.UI2.WinForms" Version="2.0.4.6" />
     <PackageReference Include="MySql.Data" Version="9.2.0" />
+    <PackageReference Include="PDFsharp" Version="6.1.1" />
+    <PackageReference Include="Uno.UI" Version="5.6.91" />
   </ItemGroup>
 
   <ItemGroup>

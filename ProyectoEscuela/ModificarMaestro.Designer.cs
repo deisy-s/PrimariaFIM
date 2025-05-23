@@ -52,13 +52,14 @@
             tbUsername = new Guna.UI2.WinForms.Guna2TextBox();
             label4 = new Label();
             label5 = new Label();
+            cbMostrarContra = new CheckBox();
             SuspendLayout();
             // 
             // lblName1
             // 
             lblName1.AutoSize = true;
             lblName1.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblName1.Location = new Point(129, 111);
+            lblName1.Location = new Point(129, 112);
             lblName1.Name = "lblName1";
             lblName1.Size = new Size(114, 28);
             lblName1.TabIndex = 37;
@@ -68,17 +69,17 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(129, 229);
+            label1.Location = new Point(129, 208);
             label1.Name = "label1";
-            label1.Size = new Size(128, 28);
+            label1.Size = new Size(117, 28);
             label1.TabIndex = 38;
-            label1.Text = "Apellidos:";
+            label1.Text = "Apellido:";
             // 
             // label2
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(129, 343);
+            label2.Location = new Point(129, 307);
             label2.Name = "label2";
             label2.Size = new Size(94, 28);
             label2.TabIndex = 39;
@@ -90,7 +91,7 @@
             tbName.BorderRadius = 10;
             tbName.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dot;
             tbName.CustomizableEdges = customizableEdges1;
-            tbName.DefaultText = "";
+            tbName.DefaultText = "Nombre";
             tbName.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             tbName.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
             tbName.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
@@ -99,8 +100,8 @@
             tbName.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             tbName.Font = new Font("Segoe UI", 9F);
             tbName.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            tbName.Location = new Point(129, 144);
-            tbName.Margin = new Padding(4, 5, 4, 5);
+            tbName.Location = new Point(129, 143);
+            tbName.Margin = new Padding(6, 8, 6, 8);
             tbName.Name = "tbName";
             tbName.PasswordChar = '\0';
             tbName.PlaceholderText = "";
@@ -108,6 +109,7 @@
             tbName.ShadowDecoration.CustomizableEdges = customizableEdges2;
             tbName.Size = new Size(273, 53);
             tbName.TabIndex = 0;
+            tbName.Enter += tbName_Enter;
             // 
             // tbLastName
             // 
@@ -115,7 +117,7 @@
             tbLastName.BorderRadius = 10;
             tbLastName.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dot;
             tbLastName.CustomizableEdges = customizableEdges3;
-            tbLastName.DefaultText = "";
+            tbLastName.DefaultText = "Apellido";
             tbLastName.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             tbLastName.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
             tbLastName.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
@@ -124,8 +126,8 @@
             tbLastName.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             tbLastName.Font = new Font("Segoe UI", 9F);
             tbLastName.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            tbLastName.Location = new Point(129, 262);
-            tbLastName.Margin = new Padding(4, 5, 4, 5);
+            tbLastName.Location = new Point(129, 242);
+            tbLastName.Margin = new Padding(6, 8, 6, 8);
             tbLastName.Name = "tbLastName";
             tbLastName.PasswordChar = '\0';
             tbLastName.PlaceholderText = "";
@@ -133,6 +135,7 @@
             tbLastName.ShadowDecoration.CustomizableEdges = customizableEdges4;
             tbLastName.Size = new Size(273, 53);
             tbLastName.TabIndex = 1;
+            tbLastName.Enter += tbLastName_Enter;
             // 
             // tbGrade
             // 
@@ -149,8 +152,8 @@
             tbGrade.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             tbGrade.Font = new Font("Segoe UI", 9F);
             tbGrade.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            tbGrade.Location = new Point(129, 376);
-            tbGrade.Margin = new Padding(4, 5, 4, 5);
+            tbGrade.Location = new Point(129, 347);
+            tbGrade.Margin = new Padding(6, 8, 6, 8);
             tbGrade.Name = "tbGrade";
             tbGrade.PasswordChar = '\0';
             tbGrade.PlaceholderText = "";
@@ -171,10 +174,10 @@
             btnSave.FillColor = Color.RoyalBlue;
             btnSave.Font = new Font("Century Gothic", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnSave.ForeColor = Color.White;
-            btnSave.Location = new Point(372, 461);
+            btnSave.Location = new Point(189, 653);
             btnSave.Name = "btnSave";
             btnSave.ShadowDecoration.CustomizableEdges = customizableEdges8;
-            btnSave.Size = new Size(142, 46);
+            btnSave.Size = new Size(141, 47);
             btnSave.TabIndex = 45;
             btnSave.Text = "GUARDAR";
             btnSave.Click += btnSave_Click;
@@ -182,9 +185,9 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Font = new Font("Agency FB", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label3.Font = new Font("Agency FB", 24F, FontStyle.Bold);
             label3.ForeColor = Color.MidnightBlue;
-            label3.Location = new Point(264, 29);
+            label3.Location = new Point(109, 34);
             label3.Name = "label3";
             label3.Size = new Size(314, 59);
             label3.TabIndex = 54;
@@ -205,10 +208,10 @@
             tbPassword.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             tbPassword.Font = new Font("Segoe UI", 9F);
             tbPassword.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            tbPassword.Location = new Point(491, 264);
-            tbPassword.Margin = new Padding(4, 5, 4, 5);
+            tbPassword.Location = new Point(129, 537);
+            tbPassword.Margin = new Padding(6, 8, 6, 8);
             tbPassword.Name = "tbPassword";
-            tbPassword.PasswordChar = '\0';
+            tbPassword.PasswordChar = '*';
             tbPassword.PlaceholderText = "";
             tbPassword.SelectedText = "";
             tbPassword.ShadowDecoration.CustomizableEdges = customizableEdges10;
@@ -230,8 +233,8 @@
             tbUsername.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             tbUsername.Font = new Font("Segoe UI", 9F);
             tbUsername.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            tbUsername.Location = new Point(491, 144);
-            tbUsername.Margin = new Padding(4, 5, 4, 5);
+            tbUsername.Location = new Point(129, 438);
+            tbUsername.Margin = new Padding(6, 8, 6, 8);
             tbUsername.Name = "tbUsername";
             tbUsername.PasswordChar = '\0';
             tbUsername.PlaceholderText = "";
@@ -244,28 +247,41 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label4.Location = new Point(491, 231);
+            label4.Location = new Point(129, 505);
             label4.Name = "label4";
-            label4.Size = new Size(281, 28);
+            label4.Size = new Size(154, 28);
             label4.TabIndex = 59;
-            label4.Text = "Contraseña para login:";
+            label4.Text = "Contraseña:";
             // 
             // label5
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label5.Location = new Point(491, 111);
+            label5.Location = new Point(129, 407);
             label5.Name = "label5";
-            label5.Size = new Size(231, 28);
+            label5.Size = new Size(104, 28);
             label5.TabIndex = 58;
-            label5.Text = "Usuario para login:";
+            label5.Text = "Usuario:";
+            // 
+            // cbMostrarContra
+            // 
+            cbMostrarContra.AutoSize = true;
+            cbMostrarContra.Font = new Font("Century Gothic", 6F);
+            cbMostrarContra.Location = new Point(251, 602);
+            cbMostrarContra.Name = "cbMostrarContra";
+            cbMostrarContra.Size = new Size(150, 21);
+            cbMostrarContra.TabIndex = 65;
+            cbMostrarContra.Text = "Mostrar contraseña";
+            cbMostrarContra.UseVisualStyleBackColor = true;
+            cbMostrarContra.CheckedChanged += cbMostrarContra_CheckedChanged;
             // 
             // ModificarMaestro
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(884, 531);
+            ClientSize = new Size(526, 732);
+            Controls.Add(cbMostrarContra);
             Controls.Add(tbPassword);
             Controls.Add(tbUsername);
             Controls.Add(label4);
@@ -280,6 +296,7 @@
             Controls.Add(lblName1);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             Name = "ModificarMaestro";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Modificar Maestro";
             ResumeLayout(false);
             PerformLayout();
@@ -299,5 +316,6 @@
         private Guna.UI2.WinForms.Guna2TextBox tbUsername;
         private Label label4;
         private Label label5;
+        private CheckBox cbMostrarContra;
     }
 }

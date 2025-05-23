@@ -11,10 +11,8 @@ namespace ReglasDeNegocio
     public class MainClass
     {
         public string sError, sConnection;
-        // Estos valores son temporales mientras se trabaja en el desarrollo
-        // Serán modificados, profe no se enoje plis
-        private string sServer = "LAPTOP-P73RDL1S";
-        private string sUser = "Deisy";
+        private string sServer = "localhost";
+        private string sUser = "root";
         private string sPass = "12345";
 
         public bool BDIniciarSesion()
@@ -22,13 +20,13 @@ namespace ReglasDeNegocio
             bool bOk = false;
             try
             {
+                // Crear el query para conectarse a la base de datos
                 sConnection = $@"Server={sServer}; database=primariafim; UID={sUser}; password={sPass}";
                 // Crear la conexión
                 MySqlConnection conMySQL = new MySqlConnection(sConnection);
                 conMySQL.Open(); // Abrir y cerrar la conexión
                 conMySQL.Close();
                 bOk = true;
-                //
             }
             catch (Exception ex)
             {

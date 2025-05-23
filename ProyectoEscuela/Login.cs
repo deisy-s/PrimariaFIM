@@ -18,13 +18,15 @@ namespace ProyectoEscuela
         public Login()
         {
             InitializeComponent();
+            this.AutoScaleMode = AutoScaleMode.None;
+            this.Font = new Font("Century Gothic", 12, FontStyle.Bold);
         }
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
             try
             {
-                if (tbUser.Text != string.Empty || tbPass.Text != string.Empty)
+                if (tbUser.Text != string.Empty && tbPass.Text != string.Empty)
                 {
                     MainClass mainClass = new MainClass();
                     MySQLDirector direClass = new MySQLDirector();
@@ -48,7 +50,7 @@ namespace ProyectoEscuela
                         {
                             DataTable dt = new DataTable();
                             bool found = false;
-                            if(maestroClass.TeacherLogin(ref dt, tbUser.Text, tbPass.Text))
+                            if(maestroClass.TeacherLogin(ref dt))
                             {
                                 foreach(DataRow row in dt.Rows)
                                 {
@@ -83,11 +85,11 @@ namespace ProyectoEscuela
                 }
                 else if (tbUser.Text == string.Empty)
                 {
-                    MessageBox.Show("Favor ingresar un usuario", "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    MessageBox.Show("Favor de ingresar un usuario", "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 }
                 else if (tbPass.Text == string.Empty)
                 {
-                    MessageBox.Show("Favor ingresar una contraseña", "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    MessageBox.Show("Favor de ingresar una contraseña", "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 }
             }
             catch

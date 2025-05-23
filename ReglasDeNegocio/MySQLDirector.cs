@@ -13,10 +13,8 @@ namespace ReglasDeNegocio
     public class MySQLDirector
     {
         public string sError, sConnection;
-        // Estos valores son temporales mientras se trabaja en el desarrollo
-        // Serán modificados, profe no se enoje plis
-        private string sServer = "LAPTOP-P73RDL1S";
-        private string sUser = "Deisy";
+        private string sServer = "localhost";
+        private string sUser = "root";
         private string sPass = "12345";
 
         public string GetUser()
@@ -24,9 +22,9 @@ namespace ReglasDeNegocio
             string user = string.Empty;
             try
             {
-                sConnection = $@"Server={sServer}; database=primariafim; UID={sUser}; password={sPass}";
+                sConnection = $@"Server={sServer}; database=primariafim; UID={sUser}; password={sPass}"; // Query para conectarse a la base de datos
                 MySqlConnection conMySQL = new MySqlConnection(sConnection);
-                using (MySqlCommand cmd = new MySqlCommand("SELECT Username FROM primariafim.director;", conMySQL)) // Query para obtener el user de director
+                using (MySqlCommand cmd = new MySqlCommand("SELECT Username FROM primariafim.director;", conMySQL)) // Query para obtener el usuario de director
                 {
                     conMySQL.Open();
                     using (var reader = cmd.ExecuteReader())
@@ -53,7 +51,7 @@ namespace ReglasDeNegocio
             string prinPass = string.Empty;
             try
             {
-                sConnection = $@"Server={sServer}; database=primariafim; UID={sUser}; password={sPass}";
+                sConnection = $@"Server={sServer}; database=primariafim; UID={sUser}; password={sPass}"; // Cadena de conexión a MySQL
                 MySqlConnection conMySQL = new MySqlConnection(sConnection);
                 using (MySqlCommand cmd = new MySqlCommand("SELECT Username, Pass from primariafim.director;", conMySQL)) // Query para obtener el user y password del director
                 {
@@ -82,12 +80,39 @@ namespace ReglasDeNegocio
             return bOk;
         }
 
+        public void GetPrincipal(ref DataTable table)
+        {
+            try
+            {
+                sConnection = $@"Server={sServer}; database=primariafim; UID={sUser}; password={sPass}"; // Cadena de conexión
+                using (MySqlConnection conMySQL = new MySqlConnection(sConnection))
+                {
+                    string sQry = $"SELECT * FROM director;";
+
+                    conMySQL.Open();
+
+                    MySqlCommand cmd = new MySqlCommand(sQry, conMySQL);
+
+                    using (MySqlDataAdapter adapter = new MySqlDataAdapter(cmd))
+                    {
+                        adapter.Fill(table);
+                    }
+
+                    conMySQL.Close();
+                }
+            }
+            catch (Exception ex)
+            {
+                sError = ex.Message;
+            }
+        }
+
         public string GetName()
         {
             string user = string.Empty;
             try
             {
-                sConnection = $@"Server={sServer}; database=primariafim; UID={sUser}; password={sPass}";
+                sConnection = $@"Server={sServer}; database=primariafim; UID={sUser}; password={sPass}"; // Cadena de conexión
                 MySqlConnection conMySQL = new MySqlConnection(sConnection);
                 using (MySqlCommand cmd = new MySqlCommand("SELECT Nombre, Apellidos FROM primariafim.director;", conMySQL)) // Query para obtener el nombre completo del director
                 {
@@ -116,10 +141,10 @@ namespace ReglasDeNegocio
         {
             try
             {
-                sConnection = $@"Server={sServer}; database=primariafim; UID={sUser}; password={sPass}";
+                sConnection = $@"Server={sServer}; database=primariafim; UID={sUser}; password={sPass}"; // Cadena de conexión
                 using (MySqlConnection conMySQL = new MySqlConnection(sConnection))
                 {
-                    string sQry = $"SELECT * FROM maestro;";
+                    string sQry = $"SELECT * FROM maestro ORDER BY Grupo;"; // Seleccionar todo de la tabla maestros
 
                     conMySQL.Open();
 
@@ -143,10 +168,10 @@ namespace ReglasDeNegocio
         {
             try
             {
-                sConnection = $@"Server={sServer}; database=primariafim; UID={sUser}; password={sPass}";
+                sConnection = $@"Server={sServer}; database=primariafim; UID={sUser}; password={sPass}"; // Cadena de conexión
                 using (MySqlConnection conMySQL = new MySqlConnection(sConnection))
                 {
-                    string sQry = $"SELECT * FROM maestro WHERE idMaestro = {i};";
+                    string sQry = $"SELECT * FROM maestro WHERE idMaestro = {i};"; // Query para seleccionar un maestro específico
 
                     conMySQL.Open();
 
@@ -198,8 +223,10 @@ namespace ReglasDeNegocio
             bool bOk = false;
             try
             {
-                string sQry = $"INSERT INTO maestro VALUES ({id}, '{name}', '{lname}', {grade}); INSERT INTO registro_user (Username, Pass, idMaestro) VALUES ('{user}', '{pass}', {id});";
-                sConnection = $@"Server={sServer}; database=primariafim; UID={sUser}; password={sPass}";
+                sConnection = $@"Server={sServer}; database=primariafim; UID={sUser}; password={sPass}"; // Cadena de conexión
+                // Query para agregar un maestro
+                string sQry = $"INSERT INTO maestro VALUES ({id}, '{name}', '{lname}', {grade}); INSERT INTO registro_user (Username, Pass, idMaestro) VALUES ('{user}', '{pass}', {id});"; // Query para agregar un maestro
+
                 MySqlConnection conMySQL = new MySqlConnection(sConnection);
 
                 if (conMySQL.State == ConnectionState.Closed)
@@ -225,7 +252,7 @@ namespace ReglasDeNegocio
             bool bOk = false;
             try
             {
-                string sQry = $"DELETE FROM maestro WHERE idMaestro = {id};";
+                string sQry = $"DELETE FROM registro_user WHERE idMaestro = {id};DELETE FROM maestro WHERE idMaestro = {id};"; // Query para eliminar un maestro
                 sConnection = $@"Server={sServer}; database=primariafim; UID={sUser}; password={sPass}";
                 MySqlConnection conMySQL = new MySqlConnection(sConnection);
 
@@ -254,7 +281,7 @@ namespace ReglasDeNegocio
             {
                 sConnection = $@"Server={sServer}; database=primariafim; UID={sUser}; password={sPass}";
                 MySqlConnection conMySQL = new MySqlConnection(sConnection);
-                using (MySqlCommand cmd = new MySqlCommand("SELECT MAX(idMaestro) FROM maestro;", conMySQL)) // Query para obtener los nombres de las BDs
+                using (MySqlCommand cmd = new MySqlCommand("SELECT MAX(idMaestro) FROM maestro;", conMySQL)) // Query para obtener el último id de maestros
                 {
                     conMySQL.Open();
                     using (var reader = cmd.ExecuteReader())
@@ -275,21 +302,24 @@ namespace ReglasDeNegocio
             return id;
         }
 
-        public int GetIDName(string name)
+        public List<int> GetIDName(string name)
         {
-            int id = 0;
+            List<int> id = new List<int>();
             try
             {
-                sConnection = $@"Server={sServer}; database=primariafim; UID={sUser}; password={sPass}";
+                sConnection = $@"Server={sServer}; database=primariafim; UID={sUser}; password={sPass}"; // Cadena de conexión
                 MySqlConnection conMySQL = new MySqlConnection(sConnection);
-                using (MySqlCommand cmd = new MySqlCommand($"SELECT idMaestro FROM maestro WHERE Nombre = '{name}';", conMySQL)) // Query para obtener el id de maestro de acuerdo a su nombre
+                using (MySqlCommand cmd = new MySqlCommand($"SELECT idMaestro, LOCATE('{name}',Nombre) FROM maestro;", conMySQL)) // Query para obtener el id de maestro de acuerdo a su nombre
                 {
                     conMySQL.Open();
                     using (var reader = cmd.ExecuteReader())
                     {
                         while (reader.Read())
                         {
-                            id = Convert.ToInt16(reader[0]);
+                            if (Convert.ToInt16(reader[1]) != 0)
+                            {
+                                id.Add(Convert.ToInt16(reader[0]));
+                            }
                         }
                         reader.Close();
                     }
@@ -303,14 +333,45 @@ namespace ReglasDeNegocio
             return id;
         }
 
-        public int GetIDLastName(string name)
+        public List<int> GetIDLastName(string name)
+        {
+            List<int> id = new List<int>();
+            try
+            {
+                sConnection = $@"Server={sServer}; database=primariafim; UID={sUser}; password={sPass}"; // Cadena de conexión
+                MySqlConnection conMySQL = new MySqlConnection(sConnection);
+                using (MySqlCommand cmd = new MySqlCommand($"SELECT idMaestro, LOCATE('{name}',Apellidos) FROM maestro;", conMySQL)) // Query para obtener el id de maestro de acuerdo a su apellido
+                {
+                    conMySQL.Open();
+                    using (var reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            if (Convert.ToInt16(reader[1]) != 0)
+                            {
+                                id.Add(Convert.ToInt16(reader[0]));
+                            }
+                        }
+                        reader.Close();
+                    }
+                }
+                conMySQL.Close();
+            }
+            catch (Exception ex)
+            {
+                sError = ex.Message;
+            }
+            return id;
+        }
+
+        public int CountTeachers()
         {
             int id = 0;
             try
             {
                 sConnection = $@"Server={sServer}; database=primariafim; UID={sUser}; password={sPass}";
                 MySqlConnection conMySQL = new MySqlConnection(sConnection);
-                using (MySqlCommand cmd = new MySqlCommand($"SELECT idMaestro from maestro WHERE Apellidos = '{name}';", conMySQL)) // Query para obtener el id de maestro de acuerdo a su apellido
+                using (MySqlCommand cmd = new MySqlCommand($"SELECT COUNT(idMaestro) from maestro;", conMySQL)) // Query para obtener la cantidad de maestros que se encuentran en la bds
                 {
                     conMySQL.Open();
                     using (var reader = cmd.ExecuteReader())
@@ -336,7 +397,7 @@ namespace ReglasDeNegocio
             bool bOk = false;
             try
             {
-                string sQry = $"UPDATE director SET Nombre = '{name}', Apellidos = '{lname}', Username = '{user}', Pass = '{pass}' WHERE idDirector = 1;";
+                string sQry = $"UPDATE director SET Nombre = '{name}', Apellidos = '{lname}', Username = '{user}', Pass = '{pass}' WHERE idDirector = 1;"; // Query para actualizar los datos del director
                 sConnection = $@"Server={sServer}; database=primariafim; UID={sUser}; password={sPass}";
                 MySqlConnection conMySQL = new MySqlConnection(sConnection);
 
@@ -356,6 +417,296 @@ namespace ReglasDeNegocio
                 sError = ex.Message;
             }
             return bOk;
+        }
+
+        public void GetGroup(ref DataTable table, int group)
+        {
+            try
+            {
+                sConnection = $@"Server={sServer}; database=primariafim; UID={sUser}; password={sPass}"; // Cadena de conexión
+                using (MySqlConnection conMySQL = new MySqlConnection(sConnection))
+                {
+                    // Obtener todo el grupo de alumnos
+                    // Se obtienen sus nombres y el nombre de su maestro
+                    string sQry = $"SELECT CONCAT(a.Apellidos, ' ', a.Nombre) As Nombre, CONCAT(m.Nombre, ' ', m.Apellidos) As Maestro FROM alumno as a INNER JOIN maestro as m WHERE a.idGrupo = {group} AND m.idMaestro = a.idMaestro ORDER BY a.Apellidos;";
+
+                    conMySQL.Open();
+
+                    MySqlCommand cmd = new MySqlCommand(sQry, conMySQL);
+
+                    using (MySqlDataAdapter adapter = new MySqlDataAdapter(cmd))
+                    {
+                        adapter.Fill(table);
+                    }
+
+                    conMySQL.Close();
+                }
+            }
+            catch (Exception ex)
+            {
+                sError = ex.Message;
+            }
+        }
+
+        public int GetCountCMNE(string periodo, string year)
+        {
+            int count = 0;
+            try
+            {
+                sConnection = $@"Server={sServer}; database=primariafim; UID={sUser}; password={sPass}"; // Cadena de conexión
+                MySqlConnection conMySQL = new MySqlConnection(sConnection);
+                // Query para contar cuántos "Nivel esperado" hay en la escuela
+                using (MySqlCommand cmd = new MySqlCommand($"SELECT COUNT(idAlumno) FROM sisat_calculo_mental WHERE Periodo = '{periodo}' AND CicloEscolar = '{year}' AND LOCATE('Nivel esperado', NivelAprendizaje);", conMySQL))
+                {
+                    conMySQL.Open();
+                    using (var reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            count = Convert.ToInt16(reader[0]);
+                        }
+                        reader.Close();
+                    }
+                }
+                conMySQL.Close();
+            }
+            catch (Exception ex)
+            {
+                sError = ex.Message;
+            }
+            return count;
+        }
+
+        public int GetCountCMED(string periodo, string year)
+        {
+            int count = 0;
+            try
+            {
+                sConnection = $@"Server={sServer}; database=primariafim; UID={sUser}; password={sPass}"; // Cadena de conexión
+                MySqlConnection conMySQL = new MySqlConnection(sConnection);
+                // Query para contar cuántos "En desarrollo" hay en la escuela
+                using (MySqlCommand cmd = new MySqlCommand($"SELECT COUNT(idAlumno) FROM sisat_calculo_mental WHERE Periodo = '{periodo}' AND CicloEscolar = '{year}' AND LOCATE('En desarrollo', NivelAprendizaje);", conMySQL))
+                {
+                    conMySQL.Open();
+                    using (var reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            count = Convert.ToInt16(reader[0]);
+                        }
+                        reader.Close();
+                    }
+                }
+                conMySQL.Close();
+            }
+            catch (Exception ex)
+            {
+                sError = ex.Message;
+            }
+            return count;
+        }
+
+        public int GetCountCMRA(string periodo, string year)
+        {
+            int count = 0;
+            try
+            {
+                sConnection = $@"Server={sServer}; database=primariafim; UID={sUser}; password={sPass}"; // Cadena de conexión
+                MySqlConnection conMySQL = new MySqlConnection(sConnection);
+                // Query para contar cuántos "Requiere apoyo" hay en la escuela
+                using (MySqlCommand cmd = new MySqlCommand($"SELECT COUNT(idAlumno) FROM sisat_calculo_mental WHERE Periodo = '{periodo}' AND CicloEscolar = '{year}' AND LOCATE('Requiere apoyo', NivelAprendizaje);", conMySQL))
+                {
+                    conMySQL.Open();
+                    using (var reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            count = Convert.ToInt16(reader[0]);
+                        }
+                        reader.Close();
+                    }
+                }
+                conMySQL.Close();
+            }
+            catch (Exception ex)
+            {
+                sError = ex.Message;
+            }
+            return count;
+        }
+
+        public int GetCountPTNE(string periodo, string year)
+        {
+            int count = 0;
+            try
+            {
+                sConnection = $@"Server={sServer}; database=primariafim; UID={sUser}; password={sPass}"; // Cadena de conexión
+                MySqlConnection conMySQL = new MySqlConnection(sConnection);
+                // Query para contar cuántos "Nivel esperado" hay en la escuela
+                using (MySqlCommand cmd = new MySqlCommand($"SELECT COUNT(idAlumno) FROM sisat_produccion_textos WHERE Periodo = '{periodo}' AND CicloEscolar = '{year}' AND LOCATE('Nivel esperado', NivelAprendizaje);", conMySQL))
+                {
+                    conMySQL.Open();
+                    using (var reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            count = Convert.ToInt16(reader[0]);
+                        }
+                        reader.Close();
+                    }
+                }
+                conMySQL.Close();
+            }
+            catch (Exception ex)
+            {
+                sError = ex.Message;
+            }
+            return count;
+        }
+
+        public int GetCountPTED(string periodo, string year)
+        {
+            int count = 0;
+            try
+            {
+                sConnection = $@"Server={sServer}; database=primariafim; UID={sUser}; password={sPass}"; // Cadena de conexión
+                MySqlConnection conMySQL = new MySqlConnection(sConnection);
+                // Query para contar cuántos "En desarrollo" hay en la escuela
+                using (MySqlCommand cmd = new MySqlCommand($"SELECT COUNT(idAlumno) FROM sisat_produccion_textos WHERE Periodo = '{periodo}' AND CicloEscolar = '{year}' AND LOCATE('En desarrollo', NivelAprendizaje);", conMySQL))
+                {
+                    conMySQL.Open();
+                    using (var reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            count = Convert.ToInt16(reader[0]);
+                        }
+                        reader.Close();
+                    }
+                }
+                conMySQL.Close();
+            }
+            catch (Exception ex)
+            {
+                sError = ex.Message;
+            }
+            return count;
+        }
+
+        public int GetCountPTRA(string periodo, string year)
+        {
+            int count = 0;
+            try
+            {
+                sConnection = $@"Server={sServer}; database=primariafim; UID={sUser}; password={sPass}"; // Cadena de conexión
+                MySqlConnection conMySQL = new MySqlConnection(sConnection);
+                // Query para contar cuántos "Requiere apoyo" hay en la escuela
+                using (MySqlCommand cmd = new MySqlCommand($"SELECT COUNT(idAlumno) FROM sisat_produccion_textos WHERE Periodo = '{periodo}' AND CicloEscolar = '{year}' AND LOCATE('Requiere apoyo', NivelAprendizaje);", conMySQL))
+                {
+                    conMySQL.Open();
+                    using (var reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            count = Convert.ToInt16(reader[0]);
+                        }
+                        reader.Close();
+                    }
+                }
+                conMySQL.Close();
+            }
+            catch (Exception ex)
+            {
+                sError = ex.Message;
+            }
+            return count;
+        }
+
+        public int GetCountTLNE(string periodo, string year)
+        {
+            int count = 0;
+            try
+            {
+                sConnection = $@"Server={sServer}; database=primariafim; UID={sUser}; password={sPass}"; // Cadena de conexión
+                MySqlConnection conMySQL = new MySqlConnection(sConnection);
+                // Query para contar cuántos "Nivel esperado" hay en la escuela
+                using (MySqlCommand cmd = new MySqlCommand($"SELECT COUNT(idAlumno) FROM sisat_toma_lectura WHERE Periodo = '{periodo}' AND CicloEscolar = '{year}' AND LOCATE('Nivel esperado', NivelAprendizaje);", conMySQL))
+                {
+                    conMySQL.Open();
+                    using (var reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            count = Convert.ToInt16(reader[0]);
+                        }
+                        reader.Close();
+                    }
+                }
+                conMySQL.Close();
+            }
+            catch (Exception ex)
+            {
+                sError = ex.Message;
+            }
+            return count;
+        }
+
+        public int GetCountTLED(string periodo, string year)
+        {
+            int count = 0;
+            try
+            {
+                sConnection = $@"Server={sServer}; database=primariafim; UID={sUser}; password={sPass}"; // Cadena de conexión
+                MySqlConnection conMySQL = new MySqlConnection(sConnection);
+                // Query para contar cuántos "En desarrollo" hay en la escuela
+                using (MySqlCommand cmd = new MySqlCommand($"SELECT COUNT(idAlumno) FROM sisat_toma_lectura WHERE Periodo = '{periodo}' AND CicloEscolar = '{year}' AND LOCATE('En desarrollo', NivelAprendizaje);", conMySQL))
+                {
+                    conMySQL.Open();
+                    using (var reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            count = Convert.ToInt16(reader[0]);
+                        }
+                        reader.Close();
+                    }
+                }
+                conMySQL.Close();
+            }
+            catch (Exception ex)
+            {
+                sError = ex.Message;
+            }
+            return count;
+        }
+
+        public int GetCountTLRA(string periodo, string year)
+        {
+            int count = 0;
+            try
+            {
+                sConnection = $@"Server={sServer}; database=primariafim; UID={sUser}; password={sPass}"; // Cadena de conexión
+                MySqlConnection conMySQL = new MySqlConnection(sConnection);
+                // Query para contar cuántos "Requiere apoyo" hay en la escuela
+                using (MySqlCommand cmd = new MySqlCommand($"SELECT COUNT(idAlumno) FROM sisat_toma_lectura WHERE Periodo = '{periodo}' AND CicloEscolar = '{year}' AND LOCATE('Requiere apoyo', NivelAprendizaje);", conMySQL))
+                {
+                    conMySQL.Open();
+                    using (var reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            count = Convert.ToInt16(reader[0]);
+                        }
+                        reader.Close();
+                    }
+                }
+                conMySQL.Close();
+            }
+            catch (Exception ex)
+            {
+                sError = ex.Message;
+            }
+            return count;
         }
     }
 }

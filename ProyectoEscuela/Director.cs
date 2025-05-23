@@ -15,6 +15,8 @@ namespace ProyectoEscuela
         public Director()
         {
             InitializeComponent();
+            this.AutoScaleMode = AutoScaleMode.None;
+            this.Font = new Font("Century Gothic", 12, FontStyle.Bold);
         }
 
         private void guna2Panel2_Click(object sender, EventArgs e)
