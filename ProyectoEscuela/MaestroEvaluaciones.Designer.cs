@@ -102,8 +102,8 @@
             // 
             // MaestroEvaluaciones
             // 
-            AutoScaleDimensions = new SizeF(14F, 28F);
-            AutoScaleMode = AutoScaleMode.Font;
+            AutoScaleDimensions = new SizeF(144F, 144F);
+            AutoScaleMode = AutoScaleMode.Dpi;
             ClientSize = new Size(1189, 685);
             Controls.Add(panel1);
             Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);

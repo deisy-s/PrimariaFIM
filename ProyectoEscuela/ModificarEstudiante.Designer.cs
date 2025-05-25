@@ -28,14 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             label3 = new Label();
             btnSave = new Guna.UI2.WinForms.Guna2Button();
             tbLastName = new Guna.UI2.WinForms.Guna2TextBox();
@@ -51,16 +51,17 @@
             label3.AutoSize = true;
             label3.Font = new Font("Agency FB", 24F, FontStyle.Bold);
             label3.ForeColor = Color.MidnightBlue;
-            label3.Location = new Point(131, 39);
+            label3.Location = new Point(164, 9);
             label3.Name = "label3";
-            label3.Size = new Size(297, 59);
+            label3.Size = new Size(173, 118);
             label3.TabIndex = 72;
-            label3.Text = "Modificar Alumno";
+            label3.Text = "Modificar\r\nAlumno";
+            label3.TextAlign = ContentAlignment.TopCenter;
             // 
             // btnSave
             // 
             btnSave.BorderRadius = 9;
-            btnSave.CustomizableEdges = customizableEdges9;
+            btnSave.CustomizableEdges = customizableEdges1;
             btnSave.DisabledState.BorderColor = Color.DarkGray;
             btnSave.DisabledState.CustomBorderColor = Color.DarkGray;
             btnSave.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -70,7 +71,7 @@
             btnSave.ForeColor = Color.White;
             btnSave.Location = new Point(203, 513);
             btnSave.Name = "btnSave";
-            btnSave.ShadowDecoration.CustomizableEdges = customizableEdges10;
+            btnSave.ShadowDecoration.CustomizableEdges = customizableEdges2;
             btnSave.Size = new Size(141, 47);
             btnSave.TabIndex = 68;
             btnSave.Text = "GUARDAR";
@@ -81,7 +82,7 @@
             tbLastName.BorderColor = Color.RoyalBlue;
             tbLastName.BorderRadius = 10;
             tbLastName.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dot;
-            tbLastName.CustomizableEdges = customizableEdges11;
+            tbLastName.CustomizableEdges = customizableEdges3;
             tbLastName.DefaultText = "";
             tbLastName.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             tbLastName.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -97,7 +98,7 @@
             tbLastName.PasswordChar = '\0';
             tbLastName.PlaceholderText = "";
             tbLastName.SelectedText = "";
-            tbLastName.ShadowDecoration.CustomizableEdges = customizableEdges12;
+            tbLastName.ShadowDecoration.CustomizableEdges = customizableEdges4;
             tbLastName.Size = new Size(273, 53);
             tbLastName.TabIndex = 65;
             // 
@@ -106,7 +107,7 @@
             tbName.BorderColor = Color.RoyalBlue;
             tbName.BorderRadius = 10;
             tbName.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dot;
-            tbName.CustomizableEdges = customizableEdges13;
+            tbName.CustomizableEdges = customizableEdges5;
             tbName.DefaultText = "";
             tbName.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             tbName.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -122,7 +123,7 @@
             tbName.PasswordChar = '\0';
             tbName.PlaceholderText = "";
             tbName.SelectedText = "";
-            tbName.ShadowDecoration.CustomizableEdges = customizableEdges14;
+            tbName.ShadowDecoration.CustomizableEdges = customizableEdges6;
             tbName.Size = new Size(273, 53);
             tbName.TabIndex = 64;
             // 
@@ -151,7 +152,7 @@
             tbGrupo.BorderColor = Color.RoyalBlue;
             tbGrupo.BorderRadius = 10;
             tbGrupo.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dot;
-            tbGrupo.CustomizableEdges = customizableEdges15;
+            tbGrupo.CustomizableEdges = customizableEdges7;
             tbGrupo.DefaultText = "";
             tbGrupo.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             tbGrupo.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -167,7 +168,7 @@
             tbGrupo.PasswordChar = '\0';
             tbGrupo.PlaceholderText = "";
             tbGrupo.SelectedText = "";
-            tbGrupo.ShadowDecoration.CustomizableEdges = customizableEdges16;
+            tbGrupo.ShadowDecoration.CustomizableEdges = customizableEdges8;
             tbGrupo.Size = new Size(273, 53);
             tbGrupo.TabIndex = 73;
             // 
@@ -183,8 +184,8 @@
             // 
             // ModificarEstudiante
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
-            AutoScaleMode = AutoScaleMode.Font;
+            AutoScaleDimensions = new SizeF(144F, 144F);
+            AutoScaleMode = AutoScaleMode.Dpi;
             BackColor = Color.White;
             ClientSize = new Size(544, 602);
             Controls.Add(tbGrupo);

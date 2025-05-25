@@ -130,11 +130,12 @@
             label3.AutoSize = true;
             label3.Font = new Font("Agency FB", 24F, FontStyle.Bold);
             label3.ForeColor = Color.MidnightBlue;
-            label3.Location = new Point(50, 37);
+            label3.Location = new Point(94, 4);
             label3.Name = "label3";
-            label3.Size = new Size(431, 59);
+            label3.Size = new Size(267, 118);
             label3.TabIndex = 75;
-            label3.Text = "Modificar Inicio de Sesión";
+            label3.Text = "Modificar Inicio\r\nde Sesión";
+            label3.TextAlign = ContentAlignment.TopCenter;
             // 
             // btnSave
             // 
@@ -157,8 +158,8 @@
             // 
             // ModificarLoginMaestro
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
-            AutoScaleMode = AutoScaleMode.Font;
+            AutoScaleDimensions = new SizeF(144F, 144F);
+            AutoScaleMode = AutoScaleMode.Dpi;
             BackColor = Color.White;
             ClientSize = new Size(526, 458);
             Controls.Add(cbMostrarContra);

@@ -658,8 +658,8 @@
             // 
             // Maestro
             // 
-            AutoScaleDimensions = new SizeF(14F, 28F);
-            AutoScaleMode = AutoScaleMode.Font;
+            AutoScaleDimensions = new SizeF(144F, 144F);
+            AutoScaleMode = AutoScaleMode.Dpi;
             BackColor = Color.White;
             ClientSize = new Size(1456, 810);
             Controls.Add(panel4);

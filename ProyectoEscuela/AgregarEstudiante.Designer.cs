@@ -51,11 +51,12 @@
             label3.AutoSize = true;
             label3.Font = new Font("Agency FB", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label3.ForeColor = Color.MidnightBlue;
-            label3.Location = new Point(131, 26);
+            label3.Location = new Point(170, 5);
             label3.Name = "label3";
-            label3.Size = new Size(285, 59);
+            label3.Size = new Size(161, 118);
             label3.TabIndex = 65;
-            label3.Text = "Registar Alumno";
+            label3.Text = "Registar\r\nAlumno";
+            label3.TextAlign = ContentAlignment.TopCenter;
             // 
             // btnSave
             // 
@@ -184,8 +185,8 @@
             // 
             // AgregarEstudiante
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
-            AutoScaleMode = AutoScaleMode.Font;
+            AutoScaleDimensions = new SizeF(144F, 144F);
+            AutoScaleMode = AutoScaleMode.Dpi;
             BackColor = Color.White;
             ClientSize = new Size(544, 602);
             Controls.Add(label3);

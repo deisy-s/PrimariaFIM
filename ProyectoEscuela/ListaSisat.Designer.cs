@@ -567,8 +567,8 @@
             // 
             // ListaSisat
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
-            AutoScaleMode = AutoScaleMode.Font;
+            AutoScaleDimensions = new SizeF(144F, 144F);
+            AutoScaleMode = AutoScaleMode.Dpi;
             BackColor = Color.WhiteSmoke;
             ClientSize = new Size(1189, 682);
             Controls.Add(pInicio);

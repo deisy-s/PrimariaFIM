@@ -443,7 +443,7 @@
             btnInicio.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnInicio.ForeColor = Color.Black;
             btnInicio.Image = Properties.Resources.inicio__1_;
-            btnInicio.Location = new Point(-19, 82);
+            btnInicio.Location = new Point(-23, 79);
             btnInicio.Margin = new Padding(4, 5, 4, 5);
             btnInicio.Name = "btnInicio";
             btnInicio.ShadowDecoration.CustomizableEdges = customizableEdges26;
@@ -554,8 +554,8 @@
             // 
             // DirectorIndex
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
-            AutoScaleMode = AutoScaleMode.Font;
+            AutoScaleDimensions = new SizeF(144F, 144F);
+            AutoScaleMode = AutoScaleMode.Dpi;
             ClientSize = new Size(1456, 810);
             Controls.Add(pInicio);
             Controls.Add(panel4);

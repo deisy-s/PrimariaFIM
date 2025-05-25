@@ -123,7 +123,7 @@
             guna2Button1.ShadowDecoration.CustomizableEdges = customizableEdges4;
             guna2Button1.Size = new Size(142, 46);
             guna2Button1.TabIndex = 7;
-            guna2Button1.Text = "E N T R A R";
+            guna2Button1.Text = "ENTRAR";
             guna2Button1.Click += guna2Button1_Click;
             // 
             // tbUser
@@ -209,8 +209,8 @@
             // 
             // Login
             // 
-            AutoScaleDimensions = new SizeF(10F, 20F);
-            AutoScaleMode = AutoScaleMode.Font;
+            AutoScaleDimensions = new SizeF(144F, 144F);
+            AutoScaleMode = AutoScaleMode.Dpi;
             BackgroundImage = Properties.Resources.Descargar_fondo_abstracto_azul_y_blanco_gratis;
             ClientSize = new Size(676, 403);
             Controls.Add(panel1);

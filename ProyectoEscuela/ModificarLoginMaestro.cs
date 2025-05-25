@@ -18,9 +18,9 @@ namespace ProyectoEscuela
 
         public ModificarLoginMaestro(int id)
         {
-            InitializeComponent();
             this.AutoScaleMode = AutoScaleMode.None;
             this.Font = new Font("Century Gothic", 12, FontStyle.Bold);
+            InitializeComponent();
             iID = id;
             DataTable dt = new DataTable();
             teachClass.TeacherLogin(ref dt, id);

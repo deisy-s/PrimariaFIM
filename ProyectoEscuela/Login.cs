@@ -18,7 +18,6 @@ namespace ProyectoEscuela
         public Login()
         {
             InitializeComponent();
-            this.AutoScaleMode = AutoScaleMode.None;
             this.Font = new Font("Century Gothic", 12, FontStyle.Bold);
         }
 

@@ -56,11 +56,12 @@
             label3.AutoSize = true;
             label3.Font = new Font("Agency FB", 24F, FontStyle.Bold);
             label3.ForeColor = Color.MidnightBlue;
-            label3.Location = new Point(116, 48);
+            label3.Location = new Point(161, 9);
             label3.Name = "label3";
-            label3.Size = new Size(318, 59);
+            label3.Size = new Size(173, 118);
             label3.TabIndex = 62;
-            label3.Text = "Modificar Director";
+            label3.Text = "Modificar\r\nDirector";
+            label3.TextAlign = ContentAlignment.TopCenter;
             // 
             // btnSave
             // 
@@ -237,8 +238,8 @@
             // 
             // ModificarDirector
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
-            AutoScaleMode = AutoScaleMode.Font;
+            AutoScaleDimensions = new SizeF(144F, 144F);
+            AutoScaleMode = AutoScaleMode.Dpi;
             BackColor = Color.White;
             ClientSize = new Size(544, 725);
             Controls.Add(cbMostrarContra);

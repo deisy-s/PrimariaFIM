@@ -59,7 +59,7 @@
             // 
             lblName1.AutoSize = true;
             lblName1.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblName1.Location = new Point(129, 112);
+            lblName1.Location = new Point(129, 115);
             lblName1.Name = "lblName1";
             lblName1.Size = new Size(114, 28);
             lblName1.TabIndex = 37;
@@ -69,7 +69,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(129, 208);
+            label1.Location = new Point(129, 211);
             label1.Name = "label1";
             label1.Size = new Size(117, 28);
             label1.TabIndex = 38;
@@ -79,7 +79,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(129, 307);
+            label2.Location = new Point(129, 310);
             label2.Name = "label2";
             label2.Size = new Size(94, 28);
             label2.TabIndex = 39;
@@ -100,7 +100,7 @@
             tbName.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             tbName.Font = new Font("Segoe UI", 9F);
             tbName.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            tbName.Location = new Point(129, 143);
+            tbName.Location = new Point(129, 146);
             tbName.Margin = new Padding(6, 8, 6, 8);
             tbName.Name = "tbName";
             tbName.PasswordChar = '\0';
@@ -126,7 +126,7 @@
             tbLastName.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             tbLastName.Font = new Font("Segoe UI", 9F);
             tbLastName.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            tbLastName.Location = new Point(129, 242);
+            tbLastName.Location = new Point(129, 245);
             tbLastName.Margin = new Padding(6, 8, 6, 8);
             tbLastName.Name = "tbLastName";
             tbLastName.PasswordChar = '\0';
@@ -152,7 +152,7 @@
             tbGrade.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             tbGrade.Font = new Font("Segoe UI", 9F);
             tbGrade.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            tbGrade.Location = new Point(129, 347);
+            tbGrade.Location = new Point(129, 350);
             tbGrade.Margin = new Padding(6, 8, 6, 8);
             tbGrade.Name = "tbGrade";
             tbGrade.PasswordChar = '\0';
@@ -187,11 +187,12 @@
             label3.AutoSize = true;
             label3.Font = new Font("Agency FB", 24F, FontStyle.Bold);
             label3.ForeColor = Color.MidnightBlue;
-            label3.Location = new Point(109, 34);
+            label3.Location = new Point(154, 1);
             label3.Name = "label3";
-            label3.Size = new Size(314, 59);
+            label3.Size = new Size(173, 118);
             label3.TabIndex = 54;
-            label3.Text = "Modificar Maestro";
+            label3.Text = "Modificar\r\nMaestro";
+            label3.TextAlign = ContentAlignment.TopCenter;
             // 
             // tbPassword
             // 
@@ -208,7 +209,7 @@
             tbPassword.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             tbPassword.Font = new Font("Segoe UI", 9F);
             tbPassword.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            tbPassword.Location = new Point(129, 537);
+            tbPassword.Location = new Point(129, 540);
             tbPassword.Margin = new Padding(6, 8, 6, 8);
             tbPassword.Name = "tbPassword";
             tbPassword.PasswordChar = '*';
@@ -233,7 +234,7 @@
             tbUsername.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             tbUsername.Font = new Font("Segoe UI", 9F);
             tbUsername.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            tbUsername.Location = new Point(129, 438);
+            tbUsername.Location = new Point(129, 441);
             tbUsername.Margin = new Padding(6, 8, 6, 8);
             tbUsername.Name = "tbUsername";
             tbUsername.PasswordChar = '\0';
@@ -247,7 +248,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label4.Location = new Point(129, 505);
+            label4.Location = new Point(129, 508);
             label4.Name = "label4";
             label4.Size = new Size(154, 28);
             label4.TabIndex = 59;
@@ -257,7 +258,7 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label5.Location = new Point(129, 407);
+            label5.Location = new Point(129, 410);
             label5.Name = "label5";
             label5.Size = new Size(104, 28);
             label5.TabIndex = 58;
@@ -277,8 +278,8 @@
             // 
             // ModificarMaestro
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
-            AutoScaleMode = AutoScaleMode.Font;
+            AutoScaleDimensions = new SizeF(144F, 144F);
+            AutoScaleMode = AutoScaleMode.Dpi;
             BackColor = Color.White;
             ClientSize = new Size(526, 732);
             Controls.Add(cbMostrarContra);

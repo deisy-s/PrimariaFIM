@@ -12,6 +12,7 @@
     <FileVersion>1.0.0.1</FileVersion>
     <PackageReleaseNotes>Gestor de datos para manejar la información de alumnos, calificaciones finales y resultados de evaluaciones SisAT.</PackageReleaseNotes>
     <ApplicationIcon>marking.ico</ApplicationIcon>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
   </PropertyGroup>
 
   <ItemGroup>

@@ -19,9 +19,9 @@ namespace ProyectoEscuela
 
         public ModificarEstudiante(int id, string name, string lname, string group)
         {
-            InitializeComponent();
             this.AutoScaleMode = AutoScaleMode.None;
             this.Font = new Font("Century Gothic", 12, FontStyle.Bold);
+            InitializeComponent();
             iID = id;
             tbName.Text = name;
             tbLastName.Text = lname;

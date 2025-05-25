@@ -20,9 +20,9 @@ namespace ProyectoEscuela
 
         public ModificarDirector()
         {
-            InitializeComponent();
             this.AutoScaleMode = AutoScaleMode.None;
             this.Font = new Font("Century Gothic", 12, FontStyle.Bold);
+            InitializeComponent();
             DataTable dt = new DataTable();
             direClass.GetPrincipal(ref dt);
             foreach (DataRow row in dt.Rows)

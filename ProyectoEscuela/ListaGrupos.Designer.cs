@@ -159,8 +159,8 @@
             // 
             // ListaGrupos
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
-            AutoScaleMode = AutoScaleMode.Font;
+            AutoScaleDimensions = new SizeF(144F, 144F);
+            AutoScaleMode = AutoScaleMode.Dpi;
             ClientSize = new Size(1189, 682);
             Controls.Add(pInicio);
             Controls.Add(pIndex);
