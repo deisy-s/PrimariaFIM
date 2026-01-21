@@ -31,8 +31,8 @@
 ### **Informes Automatizados y Visualización de Datos**
 - **Generación Dinámica de PDF:** Exportación automática de hojas de calificaciones y documentos de evaluación SisAT para uso oficial
 - **Análisis de rendimiento**
-- **Para docentes:** Generación de gráficos individuales de cada aula para visualizar el progreso de la clase
-- **Para directores:** Generación de gráficos de rendimiento de toda la escuela para comparar los resultados actuales con los históricos
+  - **Para docentes:** Generación de gráficos individuales de cada aula para visualizar el progreso de la clase
+  - **Para directores:** Generación de gráficos de rendimiento de toda la escuela para comparar los resultados actuales con los históricos
 
 ## Tecnologías utilizadas
 - C#
