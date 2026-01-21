@@ -12,19 +12,27 @@
 
 ## Description
 <p>
-  This project was developed as a free of charge system for an elementary school that needed help managing grades and SisAT assessment results, as well as generating documents with these results. The Windows application was built using C# and a MySQL database.
-  <br><br>
-  The system recognizes two types of users: Principal and Teachers. When logged in as a Principal, the user can: modify their information, view student lists for each grade, manage teachers, view assessment results, and generate a graph of the schools' overall performance to compare results with past periods. When logged in as a Teacher, the user can: modify their information, manage students, record grades by period, generate a document with the grades for the specified period, record assessment results, and finally, generate a document and graph with the recorded assessment results.
+  This application is a specialized administrative solution developed as a pro-bono project for an elementary school. It streamlines the management of academic grades and SisAT (Sistema de Alerta Temprana) assessment results, replacing manual tracking with a robust C# and MySQL desktop environment. The system features a tailored user experience through Role-Based Access Control, ensuring that data integrity is maintained while providing both administrative oversight for the Principal and classroom tools for Teachers.
 </p>
 
 ## Project functionalities
-- Login for different types of users
-- Teacher CRUD
-- Student CRUD
-- Save and view student grades
-- Save and view student results on SisAT assessments
-- Generate a PDF file with grades
-- Generate a PDF file and graph with results from SisAT assessments
+### **Advanced Access Control**
+- **Dual-Role Authentication:** Dedicated login portals for Principals and Teachers, with specific permissions for each profile
+- **Profile Management:** Users can securely update their personal information within the system
+
+### **Administrative and Academic Management**
+- **Faculty Administration (Principal only):** Comprehensive CRUD (Create, Read, Update, Delete) operations to manage the teacher directory
+- **Student Administration (Teacher only):** Comprehensive CRUD (Create, Read, Update, Delete) operations to manage student lists, ensuring accurate tracking for each grade and classroom
+
+### **Academic Tracking and SisAT Assessments**
+- **Grade Management:** Record and view student academic performance organized by specific periods
+- **SisAT Evaluation:** Specialized module to capture and monitor results from Early Warning System (SisAT) assessments
+
+### **Automated Reporting and Data Visualization**
+- **Dynamic PDF Generation:** Automatically export grade sheets and SisAT evaluation documents for official use
+- **Performance Analytics**
+  - **For Teachers:** Generate individual classroom graphs to visualize class progress
+  - **For Principals:** Generate school-wide performance graphs to compare current results with historical periods
 
 ## Technologies used
 - C#
