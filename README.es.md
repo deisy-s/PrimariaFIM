@@ -12,19 +12,27 @@
 
 ## Descripción
 <p>
-  Este proyecto fue desarrollado como un sistema gratuito para una primaria, la cual requería ayuda para la gestión de calificaciones y resultados de evaluaciones SisAT, además de la generación de documentos con estos resultados. La aplicaciónn de Windows fue creada utilizando C# y una base de datos en MySQL.
-  <br><br>
-  El sistema reconoce dos tipos de usuarios: Director y Maestros. Al iniciar sesión como Director, el usuario puede: modificar su información, ver las listas de alumnos por cada grado, gestionar a maestros, además de ver los resultados de evaluaciones y generar una gráfica con el concentrado escolar para comparar los resultados con periodos pasados. Al iniciar sesión como Maestro, el usuario puede: modificar su información, gestionar a alumnos, registrar calificaciones por periodo, generar un documento con las calificaciones del periodo indicado, registrar resultados de evaluaciones y, finalmente, generar un documento y gráfica con los resultados de las evaluaciones registradas.
+  Esta aplicación es una solución administrativa especializada, desarrollada como proyecto pro bono para una escuela primaria. Optimiza la gestión de las calificaciones académicas y los resultados de las evaluaciones del SisAT (Sistema de Alerta Temprana), reemplazando el seguimiento manual con un entorno de escritorio C# y MySQL. El sistema ofrece una experiencia de usuario personalizada mediante el Control de Acceso Basado en Roles, lo cual garantiza la integridad de los datos y proporciona supervisión administrativa al Director y herramientas de aula para Docentes.
 </p>
 
 ## Funcionalidades de proyecto
-- Inicio de sesión de diversos tipos de usuarios
-- CRUD de maestros
-- CRUD de alumnos
-- Registro de calificaciones de trimestre
-- Registro de calificaciones de evaluaciones SisAT
-- Generación de documento PDF de calificaciones
-- Generación de documento PDF y gráfica de nivel de desempeño de evaluaciones SisAT
+### **Control de Acceso Avanzado**
+- **Autenticación de Rol:** Portales de inicio de sesión dedicados para Directores y Docentes, con permisos específicos para cada perfil
+- **Gestión de Perfiles:** Los usuarios pueden actualizar su información personal de forma segura dentro del sistema
+
+### **Gestión Administrativa y Académica**
+- **Administración del Profesorado (Solo Director):** Operaciones CRUD (Crear, Leer, Actualizar, Eliminar) integrales para gestionar el directorio de docentes
+- **Administración de Estudiantes (Solo Docentes):** Operaciones CRUD (Crear, Leer, Actualizar, Eliminar) integrales para gestionar las listas de estudiantes, garantizando un seguimiento preciso de cada grado y aula
+
+### **Seguimiento Académico y Evaluaciones SisAT**
+- **Gestión de Calificaciones:** Registre y visualice el rendimiento académico de los estudiantes organizado por periodos específicos
+- **Evaluación SisAT:** Módulo especializado para capturar y monitorear los resultados de las evaluaciones del Sistema de Alerta Temprana (SisAT)
+
+### **Informes Automatizados y Visualización de Datos**
+- **Generación Dinámica de PDF:** Exportación automática de hojas de calificaciones y documentos de evaluación SisAT para uso oficial
+- **Análisis de rendimiento**
+- **Para docentes:** Generación de gráficos individuales de cada aula para visualizar el progreso de la clase
+- **Para directores:** Generación de gráficos de rendimiento de toda la escuela para comparar los resultados actuales con los históricos
 
 ## Tecnologías utilizadas
 - C#
